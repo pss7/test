@@ -1,0 +1,549 @@
+<div class="container">
+    <div class="row">
+        <!-- SNB -->
+        <div class="col-md-2 col-sm-12">
+            <nav class="admin-snb">
+                <ul>
+                    <li><a href="#none">대시보드</a></li>
+                    <li><a href="#none">회원 관리</a></li>
+                    <li class="active">
+                        <a href="#none">번역 관리</a>
+                        <ul>
+                            <li class="active"><a href="#none">머신 번역</a></li>
+                            <li><a href="#none">휴먼 번역</a></li>
+                            <li><a href="#none">기업용 번역</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#none">결제 관리</a></li>
+                    <li><a href="#none">정산 관리</a></li>
+                    <li><a href="#none">수익 관리</a></li>
+                    <li><a href="#none">운영 관리</a></li>
+                    <li><a href="#none">블로그 관리</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- SNB -->
+
+        <!-- content -->
+        <div class="col-md-10 col-sm-12">
+
+            <!-- table -->
+            <div class="admin-table">
+                <h3>번역 관리</h3>
+                <table>
+                    <tr>
+                        <th>회원 유형</th>
+                        <td colspan="5">
+                            <input type="checkbox" class="checkbox" id="1-all"><label for="1-all">전체</label>
+							<input type="checkbox" class="checkbox" id="1-01"><label for="1_01">일반</label>
+							<input type="checkbox" class="checkbox" id="1_02"><label for="1_02">번역사</label>
+							<input type="checkbox" class="checkbox" id="1_03"><label for="1_03">기업</label>
+							<input type="checkbox" class="checkbox" id="1_04"><label for="1_04">번역 & 기업</label>
+							<input type="checkbox" class="checkbox" id="1_05"><label for="1_05">일반 & 번역</label>
+                        </td>
+                    </tr>
+
+					<tr>
+                        <th>서비스 유형</th>
+                        <td colspan="5">
+                            <input type="checkbox" class="checkbox" id="2-all"><label for="2-all">전체</label>
+							<input type="checkbox" class="checkbox" id="2-01"><label for="2_01">AI 번역</label>
+							<input type="checkbox" class="checkbox" id="2_02"><label for="2_02">AI + 휴먼 번역</label>
+							<input type="checkbox" class="checkbox" id="2_03"><label for="2_03">휴먼 감수 번역</label>
+							<input type="checkbox" class="checkbox" id="2_04"><label for="2_04">업무 전문가</label>
+                        </td>
+                    </tr>
+
+					<tr>
+                        <th>번역물 유형</th>
+                        <td colspan="5">
+                            <input type="checkbox" class="checkbox" id="3-all"><label for="3-all">전체</label>
+							<input type="checkbox" class="checkbox" id="3-01"><label for="3_01">문서</label>
+							<input type="checkbox" class="checkbox" id="3_02"><label for="3_02">STT</label>
+							<input type="checkbox" class="checkbox" id="3_03"><label for="3_03">TTS</label>
+							<input type="checkbox" class="checkbox" id="3_04"><label for="3_04">영상</label>
+							<input type="checkbox" class="checkbox" id="3-05"><label for="3_05">유튜브</label>
+							<input type="checkbox" class="checkbox" id="3_06"><label for="3_06">웹번역</label>
+							<input type="checkbox" class="checkbox" id="3_07"><label for="3_07">동시통역</label>
+                        </td>
+                    </tr>
+
+					<tr>
+                        <th>출발어</th>
+                        <td colspan="2">
+                            <select class="selectbox">
+								<option>선택안함</option>
+								<option>영어</option>
+								<option>중국어</option>
+								<option>일어</option>
+								<option>기타</option>
+							</select>
+                        </td>
+						<th>도착어</th>
+                        <td colspan="2">
+                            <select class="selectbox">
+								<option>선택안함</option>
+								<option>영어</option>
+								<option>중국어</option>
+								<option>일어</option>
+								<option>기타</option>
+							</select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>기간 검색</th>
+                        <td colspan="5">
+                            <select class="selectbox-sm">
+								<option>의뢰시간</option>
+								<option>완료시간</option>
+								<option>마감예정일</option>
+							</select>
+
+							<input type="date">
+							-
+							<input type="date">
+							<a href="#" class="yellow-btn">어제</a>
+							<a href="#" class="yellow-btn">오늘</a>
+							<a href="#" class="l-green-btn">1개월</a>
+							<a href="#" class="l-green-btn">3개월</a>
+							<a href="#" class="l-green-btn">6개월</a>
+							<a href="#" class="l-green-btn">1년</a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>결제상태</th>
+                        <td> </td>
+                        <th>환불</th>
+                        <td> </td>
+                        <th>번역의뢰</th>
+                        <td> </td>
+                    </tr>
+
+                    <tr>
+                        <th>번역상태</th>
+						<td> </td>
+						<th>관리자승인</th>
+						<td> </td>
+						<th>????</th>
+						<td> </td>
+                    </tr>
+					<tr>
+                        <th>가격</th>
+						<td colspan="2">
+							<select class="selectbox">
+								<option>의뢰시간</option>
+								<option>완료시간</option>
+								<option>마감예정일</option>
+							</select>
+						</td>
+						<th>도착어</th>
+						<td colspan="2">
+							<select class="selectbox">
+								<option>의뢰시간</option>
+								<option>완료시간</option>
+								<option>마감예정일</option>
+							</select>
+						</td>
+                    </tr>
+
+					<tr>
+                        <th>상태</th>
+                        <td colspan="5">
+                            <input type="checkbox" class="checkbox" id="4-all"> <label for="4-all">전체</label>
+							<input type="checkbox" class="checkbox" id="4-01"> <label for="4_01">번역중</label>
+							<input type="checkbox" class="checkbox" id="4_02"> <label for="4_02">번역감수중</label>
+							<input type="checkbox" class="checkbox" id="4_03"> <label for="4_03">취소</label>
+							<input type="checkbox" class="checkbox" id="4_04"> <label for="4_04">환불</label>
+							<input type="checkbox" class="checkbox" id="4_05"> <label for="4_05">그 외 진행중</label>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <!-- table -->
+
+			<div class="admin-search text-right mgt-20">
+				<a href="#" class="l-blue-btn">초기화</a>
+				<a href="#" class="black-btn">검색</a>
+			</div>
+
+			<div class="admin-search-result mgt-100 relative">
+				<strong class="fs-22">총 <span class="l-blue">100</span>개</strong> <a href="#" class="black-btn mgl-20">검색 결과 엑셀 다운로드</a> <a href="#" class="black-btn">선택 항목 다운로드</a>
+				<div class="absolute right top">
+					<select class="selectbox-xs">
+						<option>20개</option>
+						<option>50개</option>
+						<option>100개</option>
+						<option>200개</option>
+					</select>
+				</div>
+			</div>
+			
+            <!-- tab -->
+			<div class="tab mgt-30">
+				<ul class="row">
+					<li><a href="#" class="bg-l-blue">회원정보</a></li>
+					<li><a href="#" class="bg-l-gray">번역물정보</a></li>
+					<li><a href="#" class="bg-l-gray">회원결제정보</a></li>
+					<li><a href="#" class="bg-l-gray">번역사 결제정보</a></li>
+					<li><a href="#" class="bg-l-gray">번역사 세부이력</a></li>
+					<li><a href="#" class="bg-l-gray">번역사 결산</a></li>
+					<li><a href="#" class="bg-l-gray">휴텍씨 결산</a></li>
+					<li><a href="#" class="bg-l-gray">기타</a></li>
+				</ul>
+			</div>
+			<!-- tab -->
+
+			<!-- table -->
+            <div class="admin-table search-result-table mgt-20">
+                <table>
+					<thead>
+						<tr>
+							<th>No</th>
+							<th><input type="checkbox"></th>
+							<th>의뢰일</th>
+							<th>번역물 번호</th>
+							<th>서비스 유형</th>
+							<th>번역물 유형</th>
+							<th>출발어</th>
+							<th>도착어</th>
+							<th>제 목 파일명</th>
+							<th>최종 파일</th>
+							<th>최종 완료일</th>
+							<th>작업 소요 시간</th>
+							<th>마감 요청일</th>
+							<th>번역 상태</th>
+							<th>번역사</th>
+							<th>번역 의뢰</th>
+							<th>번역사 가격</th>
+							<th>부가 서비스1</th>
+							<th>부가 서비스2</th>
+							<th>문서 번역</th>
+							<th>부가 비용</th>
+							<th>결제 일시</th>
+							<th>결제 금액</th>
+							<th>결제 내역</th>
+							<th>결제 상태</th>
+							<th>번역사 추가비용</th>
+							<th>번역 금액</th>
+							<th>번역사 잔액</th>
+							<th>할인 금액</th>
+							<th>그외에 비용 +  추가 기능</th>
+							<th>환불</th>
+							<th>환불일</th>
+							<th>환불 금액</th>
+							<th>회원 유형</th>
+							<th>이름</th>
+							<th>상세</th>
+							<th>번역 이용 건수</th>
+							<th>회원 유형</th>
+							<th>가입 일시</th>
+							<th>이름</th>
+							<th>성별/ 생년 월일</th>
+							<th>상세</th>
+							<th>번역 진행 건수</th>
+							<th>번 상담</th>
+							<th>견적서</th>
+						</tr>
+					</thead>
+
+					<tbody>
+						<tr>
+							<td>100</td>
+							<td><input type="checkbox"></td>
+							<td>YY-MM-DD</td>
+							<td>6</td>
+							<td><img src="/img/layout/microchip-solid.svg" alt=""></td>
+							<td><img src="/img/layout/book-solid.svg" alt=""></td>
+							<td>한국어 <a href="#"><img src="/img/layout/down-long-solid.svg" alt=""></a></td>
+							<td>한국어 <a href="#"><img src="/img/layout/down-long-solid.svg" alt=""></a></td>
+							<td>이력서.doc</td>
+							<td><a href="#" class="black-btn">미리보기</a></td>
+							<td>YY-MM-DD</td>
+							<td>3d</td>
+							<td>YY-MM-DD</td>
+							<td>완료</td>
+							<td>AI</td>
+							<td>의뢰 요청</td>
+							<td>100,000</td>
+							<td>에디팅툴</td>
+							<td>에디팅툴</td>
+							<td>에디팅툴</td>
+							<td>100,000</td>
+							<td>YY-MM-DD</td>
+							<td>100,000</td>
+							<td>에디팅툴</td>
+							<td>완료</td>
+							<td>100,000</td>
+							<td>100,000</td>
+							<td>100,000</td>
+							<td></td>
+							<td>검수비</td>
+							<td>완료</td>
+							<td>YY-MM-DD</td>
+							<td>100,000</td>
+							<td>일반</td>
+							<td>홍길동<a href="#"><img src="/img/layout/magnifying-glass-solid.svg" alt="자세히 보기" ></a></td>
+							<td><a href="#"><img src="/img/layout/magnifying-glass-solid.svg" alt="자세히 보기" ></a></td>
+							<td>6</td>
+							<td>일반</td>
+							<td>YY-MM-DD</td>
+							<td>홍길동<a href="#"><img src="/img/layout/magnifying-glass-solid.svg" alt="자세히 보기" ></a></td>
+							<td>남 99.09.18</td>
+							<td><a href="#"><img src="/img/layout/magnifying-glass-solid.svg" alt="자세히 보기" ></a></td>
+							<td>6</td>
+							<td></td>
+							<td>이메일</td>
+						</tr>
+						<tr>
+							<td>99</td>
+							<td><input type="checkbox"></td>
+							<td>YY-MM-DD</td>
+							<td>6</td>
+							<td><img src="/img/layout/desktop-solid.svg" alt=""></td>
+							<td><img src="/img/layout/microphone-solid.svg" alt=""></td>
+							<td>한국어 <a href="#"><img src="/img/layout/down-long-solid.svg" alt=""></a></td>
+							<td>한국어 <a href="#"><img src="/img/layout/down-long-solid.svg" alt=""></a></td>
+							<td>음성.mp4</td>
+							<td><a href="#" class="black-btn">미리보기</a></td>
+							<td>YY-MM-DD</td>
+							<td>2d</td>
+							<td>YY-MM-DD</td>
+							<td>견적중</td>
+							<td>홍길동</td>
+							<td>진행중</td>
+							<td>100,000</td>
+							<td>긴급</td>
+							<td>출발 S Text</td>
+							<td>출발 S Text</td>
+							<td>100,000</td>
+							<td>YY-MM-DD</td>
+							<td>100,000</td>
+							<td>출발 S Text</td>
+							<td>완료</td>
+							<td>100,000</td>
+							<td>100,000</td>
+							<td>100,000</td>
+							<td>1,000</td>
+							<td>출판</td>
+							<td>진행중</td>
+							<td>YY-MM-DD</td>
+							<td>100,000</td>
+							<td>번역사</td>
+							<td>홍길동<a href="#"><img src="/img/layout/magnifying-glass-solid.svg" alt="자세히 보기" ></a></td>
+							<td><a href="#"><img src="/img/layout/magnifying-glass-solid.svg" alt="자세히 보기" ></a></td>
+							<td>6</td>
+							<td>일반</td>
+							<td>YY-MM-DD</td>
+							<td>홍길동<a href="#"><img src="/img/layout/magnifying-glass-solid.svg" alt="자세히 보기" ></a></td>
+							<td>남 99.09.18</td>
+							<td><a href="#"><img src="/img/layout/magnifying-glass-solid.svg" alt="자세히 보기" ></a></td>
+							<td>6</td>
+							<td></td>
+							<td>문자</td>
+						</tr>
+						<tr>
+							<td>98</td>
+							<td><input type="checkbox"></td>
+							<td>YY-MM-DD</td>
+							<td>6</td>
+							<td><img src="/img/layout/address-card-solid.svg" alt=""></td>
+							<td><img src="/img/layout/video-solid.svg" alt=""></td>
+							<td>한국어 <a href="#"><img src="/img/layout/down-long-solid.svg" alt=""></a></td>
+							<td>한국어 <a href="#"><img src="/img/layout/down-long-solid.svg" alt=""></a></td>
+							<td>음성.mp4</td>
+							<td><a href="#" class="black-btn">미리보기</a></td>
+							<td>YY-MM-DD</td>
+							<td>1d</td>
+							<td>YY-MM-DD</td>
+							<td>진행중</td>
+							<td>AI + 휴먼</td>
+							<td>번역 완료</td>
+							<td>100,000</td>
+							<td>문서 번역</td>
+							<td>출발 T 검수</td>
+							<td>출발 T 검수</td>
+							<td>100,000</td>
+							<td>YY-MM-DD</td>
+							<td>100,000</td>
+							<td>출발 T 검수</td>
+							<td>환불</td>
+							<td>100,000</td>
+							<td>100,000</td>
+							<td>100,000</td>
+							<td>20,000</td>
+							<td>인쇄</td>
+							<td>승인</td>
+							<td>YY-MM-DD</td>
+							<td>100,000</td>
+							<td>기업</td>
+							<td>홍길동<a href="#"><img src="/img/layout/magnifying-glass-solid.svg" alt="자세히 보기" ></a></td>
+							<td><a href="#"><img src="/img/layout/magnifying-glass-solid.svg" alt="자세히 보기" ></a></td>
+							<td>6</td>
+							<td>기업</td>
+							<td>YY-MM-DD</td>
+							<td>홍길동<a href="#"><img src="/img/layout/magnifying-glass-solid.svg" alt="자세히 보기" ></a></td>
+							<td>남 99.09.18</td>
+							<td><a href="#"><img src="/img/layout/magnifying-glass-solid.svg" alt="자세히 보기" ></a></td>
+							<td>6</td>
+							<td></td>
+							<td><a href="#"><img src="/img/layout/download-solid.svg" alt="" ></a></td>
+						</tr>
+						<tr>
+							<td>97</td>
+							<td><input type="checkbox"></td>
+							<td>YY-MM-DD</td>
+							<td>6</td>
+							<td><img src="/img/layout/graduation-cap-solid.svg" alt=""></td>
+							<td><img src="/img/layout/video-solid.svg" alt=""></td>
+							<td>한국어 <a href="#"><img src="/img/layout/down-long-solid.svg" alt=""></a></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>96</td>
+							<td><input type="checkbox"></td>
+							<td>YY-MM-DD</td>
+							<td>6</td>
+							<td></td>
+							<td><img src="/img/layout/youtube-solid.svg" alt=""></td>
+							<td>영어 <a href="#"><img src="/img/layout/down-long-solid.svg" alt=""></a></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>95</td>
+							<td><input type="checkbox"></td>
+							<td>YY-MM-DD</td>
+							<td>6</td>
+							<td></td>
+							<td><img src="/img/layout/globe-solid.svg" alt=""></td>
+							<td>한국어 <a href="#"><img src="/img/layout/down-long-solid.svg" alt=""></a></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</tbody>
+                </table>
+            </div>
+            <!-- table -->
+
+            <!-- pagination -->
+            <div class="mgt-30">
+                <div class="admin-pagination">
+					<ul class="pagenum">
+						<li class="button2"><a href="#none" onclick="return false;" class="board_button"><img src="/img/layout/btn_pprev.png" alt="이전" class="btn_pprev"></a></li><li class="button2"><a href="#none" onclick="return false;" class="board_button"><img src="/img/layout/btn_prev.png" alt="이전" class="btn_prev"></a></li><li><a href="#none" onclick="return false;" class="page-numbers current" title="1페이지">1</a></li><li><a href="?pagenum=1&amp;search_select=&amp;keyword=&amp;category_idx=219" class="page-numbers" title="2페이지로 이동합니다.">2</a></li><li><a href="?pagenum=2&amp;search_select=&amp;keyword=&amp;category_idx=219" class="page-numbers" title="3페이지로 이동합니다.">3</a></li><li><a href="?pagenum=3&amp;search_select=&amp;keyword=&amp;category_idx=219" class="page-numbers" title="4페이지로 이동합니다.">4</a></li><li><a href="?pagenum=4&amp;search_select=&amp;keyword=&amp;category_idx=219" class="page-numbers" title="5페이지로 이동합니다.">5</a></li><li><a href="?pagenum=5&amp;search_select=&amp;keyword=&amp;category_idx=219" class="page-numbers" title="6페이지로 이동합니다.">6</a></li><li><a href="?pagenum=6&amp;search_select=&amp;keyword=&amp;category_idx=219" class="page-numbers" title="7페이지로 이동합니다.">7</a></li><li><a href="?pagenum=7&amp;search_select=&amp;keyword=&amp;category_idx=219" class="page-numbers" title="8페이지로 이동합니다.">8</a></li><li><a href="?pagenum=8&amp;search_select=&amp;keyword=&amp;category_idx=219" class="page-numbers" title="9페이지로 이동합니다.">9</a></li><li><a href="?pagenum=9&amp;search_select=&amp;keyword=&amp;category_idx=219" class="page-numbers" title="10페이지로 이동합니다.">10</a></li><li class="button2"><a href="?pagenum=10&amp;search_select=&amp;keyword=&amp;category_idx=219" class="board_button"><img src="/img/layout/btn_next.png" alt="다음" class="btn_next"></a></li><li class="button2"><a href="?pagenum=10&amp;search_select=&amp;keyword=&amp;category_idx=219" class="board_button"><img src="/img/layout/btn_nnext.png" alt="다음" class="btn_next"></a></li>
+					</ul>
+				</div>
+            </div>
+        </div>
+    </div>
+</div>

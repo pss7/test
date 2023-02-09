@@ -1,0 +1,1783 @@
+<div class="container">
+    <div class="row">
+        <!-- SNB -->
+        <div class="col-md-2 col-sm-12">
+            <nav class="admin-snb">
+                <ul>
+                    <li><a href="#none">대시보드</a></li>
+                    <li><a href="#none">회원 관리</a></li>
+                    <li class="active">
+                        <a href="#none">번역 관리</a>
+                        <ul>
+                            <li class="active"><a href="#none">머신 번역</a></li>
+                            <li><a href="#none">휴먼 번역</a></li>
+                            <li><a href="#none">기업용 번역</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#none">결제 관리</a></li>
+                    <li><a href="#none">정산 관리</a></li>
+                    <li><a href="#none">수익 관리</a></li>
+                    <li><a href="#none">운영 관리</a></li>
+                    <li><a href="#none">블로그 관리</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- SNB -->
+
+        <!-- content -->
+        <div class="col-md-10 col-sm-12">
+
+       <!-- table -->
+                <div class="admin-table st2">
+                    <h3>번역 관리</h3>
+                    <table>
+
+                        <colgroup>
+                            <col width="5%">
+                            <col width="28%">
+                            <col width="8%">
+                        </colgroup>
+
+                        <tr>
+                            <th>회원 유형 <input type="checkbox" id="1-all"></th>
+                            <td>
+                                <div class="fx_box">
+                                    <input type="checkbox" class="checkbox" id="1-01"><label for="1_01">일반</label>
+                                    <input type="checkbox" class="checkbox" id="1_02"><label for="1_02">번역사</label>
+                                    <input type="checkbox" class="checkbox" id="1_03"><label for="1_03">기업</label>
+                                    <input type="checkbox" class="checkbox" id="1_04"><label for="1_04">번역 & 기업</label>
+                                    <input type="checkbox" class="checkbox" id="1_05"><label for="1_05">일반 & 번역</label>
+                                </div>
+
+                                <div class="fx_box">
+                                    <input type="checkbox" class="checkbox" id="1_06"><label for="1_06">회원상태</label>
+                                    <input type="checkbox" class="checkbox" id="1_07"><label for="1_07">전체</label>
+                                    <input type="checkbox" class="checkbox" id="1_08"><label for="1_08">활동</label>
+                                    <input type="checkbox" class="checkbox" id="1_09"><label for="1_09">정지</label>
+                                    <input type="checkbox" class="checkbox" id="1_10"><label for="1_10">탈퇴</label>
+                                </div>
+                            </td>
+
+                            <td>
+
+                                <div class="fx_box">
+                                    <select class="selectbox-xs">
+                                        <option>회원상태</option>
+                                        <option>승인</option>
+                                        <option>미승인</option>
+                                        <option>확인중</option>
+                                    </select>
+
+                                    <select class="selectbox-xs">
+                                        <option>승인상태</option>
+                                        <option>승인</option>
+                                        <option>입금</option>
+                                        <option>환불</option>
+                                        <option>취소</option>
+                                        <option>견적중</option>
+                                    </select>
+                                </div>
+
+                                <div class="fx_box">
+                                    <input type="checkbox" class="checkbox" id="1_11"><label for="1_11">전체</label>
+                                    <input type="checkbox" class="checkbox" id="1_12"><label for="1_12">본인인증</label>
+                                    <input type="checkbox" class="checkbox" id="1_13"><label for="1_13">카카오</label>
+                                    <input type="checkbox" class="checkbox" id="1_14"><label for="1_14">네이버</label>
+                                    <input type="checkbox" class="checkbox" id="1_15"><label for="1_15">구글</label>
+                                </div>
+
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th>서비스 유형 <input type="checkbox" id="2-all"></th>
+                            <td>
+                                <input type="checkbox" class="checkbox" id="2-01"><label for="2_01">AI 번역</label>
+                                <input type="checkbox" class="checkbox" id="2_02"><label for="2_02">AI + 휴먼 번역</label>
+                                <input type="checkbox" class="checkbox" id="2_03"><label for="2_03">휴먼 감수 번역</label>
+                                <input type="checkbox" class="checkbox" id="2_04"><label for="2_04">업무 전문가</label>
+                            </td>
+                            <td>
+
+                                <div class="fx_box">
+                                    <select class="selectbox-xs">
+                                        <option>영어</option>
+                                        <option>한국어</option>
+                                        <option>중국어</option>
+                                        <option>일어</option>
+                                        <option>기타</option>
+                                    </select>
+                                    <select class="selectbox-xs">
+                                        <option>한국어</option>
+                                        <option>영어</option>
+                                        <option>중국어</option>
+                                        <option>일어</option>
+                                        <option>기타</option>
+                                    </select>
+
+                                    <select class="selectbox-xs">
+                                        <option>의뢰시간</option>
+                                        <option>완료시간</option>
+                                        <option>마감예정일</option>
+                                    </select>
+
+                                    <input type="date">
+                                    -
+                                    <input type="date">
+                                    <a href="#" class="yellow-btn">어제</a>
+                                    <a href="#" class="yellow-btn">오늘</a>
+                                    <a href="#" class="l-green-btn">1개월</a>
+                                    <a href="#" class="l-green-btn">3개월</a>
+                                    <a href="#" class="l-green-btn">6개월</a>
+                                    <a href="#" class="l-green-btn">1년</a>
+                                </div>
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <th>번역물 유형 <input type="checkbox" id="3-all"></th>
+                            <td>
+                                <input type="checkbox" class="checkbox" id="3_01"><label for="3_01">문서</label>
+                                <input type="checkbox" class="checkbox" id="3_02"><label for="3_02">STT</label>
+                                <input type="checkbox" class="checkbox" id="3_03"><label for="3_03">TTS</label>
+                                <input type="checkbox" class="checkbox" id="3_04"><label for="3_04">영상</label>
+                                <input type="checkbox" class="checkbox" id="3-05"><label for="3_05">유튜브</label>
+                                <input type="checkbox" class="checkbox" id="3_06"><label for="3_06">웹번역</label>
+                                <input type="checkbox" class="checkbox" id="3_07"><label for="3_07">동시통역</label>
+                            </td>
+                            <td>
+
+                                <div class="fx_box">
+                                    <select class="selectbox-xs">
+                                        <option>부가서비스</option>
+                                        <option>번역감수</option>
+                                        <option>에디팅툴</option>
+                                        <option>긴급</option>
+                                        <option>문서편집</option>
+                                        <option>업무전문가</option>
+                                    </select>
+
+                                    <select class="selectbox-xs">
+                                        <option>완료</option>
+                                        <option>진행중</option>
+                                        <option>승인</option>
+                                        <option>취소</option>
+                                    </select>
+
+                                    <!-- 결제 상태 -->
+                                    <select class="selectbox-xs">
+                                        <option>결제상태</option>
+                                    </select>
+
+                                    <!-- 결제 방법-->
+                                    <select class="selectbox-xs">
+                                        <option>결제방법</option>
+                                        <option>카드</option>
+                                        <option>이체, 무통장</option>
+                                        <option>네이버 카카오</option>
+                                        <option>포인트</option>
+                                        <option>보너스</option>
+                                    </select>
+
+                                    <!-- 가격 -->
+                                    <select class="selectbox-xs">
+                                        <option>가격</option>
+                                        <option>$</option>
+                                        <option>￦</option>
+                                    </select>
+
+                                    <!-- 환불 -->
+                                    <select class="selectbox-xs">
+                                        <option>환불</option>
+                                        <option>완료</option>
+                                        <option>의뢰요청</option>
+                                        <option>진행중</option>
+                                        <option>감수중</option>
+                                        <option>재요청</option>
+                                        <option>취소</option>
+                                    </select>
+                                </div>
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <th>번역상태 <input type="checkbox" id="4-all"></th>
+                            <td>
+                                <input type="checkbox" class="checkbox" id="4_01"> <label for="4_01">완료</label>
+                                <input type="checkbox" class="checkbox" id="4_02"> <label for="4_02">번역중</label>
+                                <input type="checkbox" class="checkbox" id="4_03"> <label for="4_03">견적중</label>
+                                <input type="checkbox" class="checkbox" id="4_04"> <label for="4_04">감수중</label>
+                                <input type="checkbox" class="checkbox" id="4_05"> <label for="4_05">재요청</label>
+                                <input type="checkbox" class="checkbox" id="4_06"> <label for="4_06">환불</label>
+                                <input type="checkbox" class="checkbox" id="4_07"> <label for="4_07">취소</label>
+                                <input type="checkbox" class="checkbox" id="4_08"> <label for="4_08">관리자승인완료</label>
+                            </td>
+                            <td>
+                                <div class="fx_box">
+                                    <select class="selectbox-xs">
+                                        <option>이름</option>
+                                        <option>번역물번호</option>
+                                        <option>번역물파일명</option>
+                                        <option>번역사명</option>
+                                        <option>번역</option>
+                                        <option>부가서비스</option>
+                                    </select>
+                                    <span class="textbox"><input type="search" placeholder="검색어 입력" /></span>
+                                </div>
+                            </td>
+
+
+                        </tr>
+                    </table>
+                </div>
+                <!-- table -->
+
+                <div class="admin-search text-right mgt-20">
+                    <a href="#" class="l-blue-btn">초기화</a>
+                    <a href="#" class="black-btn">검색</a>
+                </div>
+
+                <div class="admin-search-result mgt-100 relative">
+                    <strong class="fs-22">총 <span class="l-blue">100</span>개</strong> <a href="#"
+                        class="black-btn mgl-20">검색 결과 엑셀 다운로드</a> <a href="#" class="black-btn">선택 항목 다운로드</a>
+                    <div class="absolute right top">
+                        <select class="selectbox-xs">
+                            <option>20개</option>
+                            <option>50개</option>
+                            <option>100개</option>
+                            <option>200개</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- tab -->
+                <div class="tab mgt-30">
+                    <ul class="row">
+                        <li><a href="#none" class="category_change bg-l-blue" onclick="category_all();">전체</a></li>
+                        <li><a href="#none" class="category_change bg-l-gray" data-classname="table_01">회원정보</a></li>
+                        <li><a href="#none" class="category_change bg-l-gray" data-classname="table_02">번역물정보</a></li>
+                        <li><a href="#none" class="category_change bg-l-gray" data-classname="table_03">회원결제정보</a></li>
+                        <li><a href="#none" class="category_change bg-l-gray" data-classname="table_04">번역사 결제정보</a>
+                        </li>
+                        <li><a href="#none" class="category_change bg-l-gray" data-classname="table_05">번역사 세부이력</a>
+                        </li>
+                        <li><a href="#none" class="category_change bg-l-gray" data-classname="table_06">번역사 결산</a></li>
+                        <li><a href="#none" class="category_change bg-l-gray" data-classname="table_07">휴텍씨 결산</a></li>
+                        <li><a href="#none" class="category_change bg-l-gray" data-classname="table_08">기타</a></li>
+                    </ul>
+                </div>
+                <!-- tab -->
+
+                <!-- table -->
+                <input type="hidden" id="table_flag" value="0" />
+                <div class="admin-table search-result-table mgt-20 st2">
+                    <table>
+                        <thead>
+                            <tr>
+                                <!-- 회원정보 -->
+                                <th>No</th>
+                                <th><input type="checkbox"></th>
+                                <th>
+                                    이름 <br>
+                                    성별/생년월일
+                                </th>
+                                <th>
+                                    이메일 <br>
+                                    휴대폰
+                                </th>
+                                <th>
+                                    주소
+                                </th>
+                                <th class="table_01 table_change">
+                                    회원유형 <br>
+                                    (회원 상태/회원제)
+                                </th>
+                                <th class="table_01 table_change">
+                                    가입일시 <br>
+                                    (가입채널)
+                                </th>
+
+                                <th class="table_01 table_change">최근 로그인 <br>
+                                    최근 체류시간</th>
+                                <th class="table_01 table_change">
+                                    AI <br>
+                                    번역건
+                                </th>
+                                <th class="table_01 table_change">
+                                    의뢰일 <br>
+                                    최종완료일
+                                </th>
+
+                                <th class="table_01 table_change">최초접근<br />최근접근</th>
+                                <th class="table_01 table_change">회원제</th>
+                                <th class="table_01 table_change">회원 상태</th>
+                                <th class="table_01 table_change">번역 진행 건수</th>
+                                <th class="table_01 table_change">원 상담</th>
+
+                                <!-- 번역물정보 -->
+                                <th class="table_02 table_change">번역물 번호</th>
+                                <th class="table_02 table_change">서비스 유형</th>
+                                <th class="table_02 table_change">번역물 유형</th>
+                                <th class="table_02 table_change">출발어</th>
+                                <th class="table_02 table_change">도착어</th>
+                                <th class="table_02 table_change">제 목<br />파일명</th>
+                                <th class="table_02 table_change">
+                                    번역 상태 <br>
+                                    번역 의뢰
+                                </th>
+                                <th class="table_02 table_change">작업 분량</th>
+                                <th class="table_02 table_change">
+                                    마감 요청일 <br>
+                                    작업 소요 시간
+                                </th>
+                                <th class="table_02 table_change">물 관리</th>
+
+                                <!-- 번역관련_부가서비스 -->
+                                <th class="table_02 table_change">번역사</th>
+                                <th class="table_02 table_change">번역사 가격</th>
+                                <th class="table_02 table_change">
+                                    문서 <br>
+                                    최종파일
+                                </th>
+                                <th class="table_02 table_change">
+                                    부가 서비스1 <br>
+                                    부가 서비스2
+                                </th>
+
+                                <!-- 회원결제정보 -->
+                                <th class="table_03 table_change">부가 비용</th>
+                                <th class="table_03 table_change">결제일</th>
+                                <th class="table_03 table_change">
+                                    결제 금액 <br>
+                                    할인 금액
+                                </th>
+                                <th class="table_03 table_change">
+                                    충전(+)/사용내역(-) <br>
+                                    잔액
+                                </th>
+                                <th class="table_03 table_change">부가결제 내역</th>
+                                <th class="table_03 table_change">
+                                    결제 상태/방법 <br>
+                                    (세금계산서)
+                                </th>
+                                <th class="table_03 table_change">사 결제 메모</th>
+                                <th class="table_03 table_change">
+                                    카드명(카드사) <br>
+                                    카드번호
+                                </th>
+                                <th class="table_03 table_change">승인 번호</th>
+                                <th class="table_03 table_change">
+                                    환불(입금여부) <br>
+                                    환불일
+                                </th>
+                                <th class="table_03 table_change">
+                                    환불 금액
+                                </th>
+                                <th class="table_03 table_change">
+                                    예금주(은행명) <br>
+                                    환불계좌번호
+                                </th>
+                                <th class="table_03 table_change">원 결제</th>
+
+                                <!-- 번역사 결제정보 -->
+                                <th class="table_04 table_change">번역사 입금일</th>
+                                <th class="table_04 table_change">
+                                    번역사 금액 <br>
+                                    번역사 추가비용
+                                </th>
+                                <th class="table_04 table_change">
+                                    최종 정산액 <br>
+                                    할인 금액</th>
+                                <th class="table_04 table_change">번역사 잔액</th>
+
+                                <th class="table_04 table_change">
+                                    영업 수익% <br>
+                                    수수료 비율
+                                </th>
+                                <th class="table_04 table_change">
+                                    지급상태/세금공제(세금계산서)
+                                </th>
+                                <th class="table_04 table_change">
+                                    사업자 (주민번호) <br>
+                                    사업장첨부
+                                </th>
+                                <th class="table_04 table_change">
+                                    예금주(은행명) <br>
+                                    번역사계좌번호
+                                </th>
+                                <th class="table_04 table_change">출금 상태</th>
+                                <th class="table_04 table_change">그외에 비용 + 추가 기능</th>
+                                <th class="table_04 table_change">번 결제</th>
+
+                                <!-- 번역사 세부이력 -->
+                                <th class="table_05 table_change">
+                                    번역 진행 횟수
+                                </th>
+                                <th class="table_05 table_change">
+                                    번역가 유형 <br>
+                                    번역 분야
+                                </th>
+                                <th class="table_05 table_change">
+                                    번역 언어 <br>
+                                    경력/(레벨)
+                                </th>
+                                <th class="table_05 table_change">
+                                    번역 가능사 <br>
+                                    계약서</th>
+                                <th class="table_05 table_change">
+                                    전공/학력 <br>
+                                    (졸업상태)
+                                </th>
+                                <th class="table_05 table_change">회사명</th>
+                                <th class="table_05 table_change">
+                                    입사일 <br>
+                                    퇴사일
+                                </th>
+                                <th class="table_05 table_change">
+                                    상세 <br>
+                                    보기
+                                </th>
+                                <th class="table_05 table_change">사 상담</th>
+
+                                <!-- 번역사 정산 -->
+                                <th class="table_06 table_change">
+                                    번역사 입금일 <br>
+                                    결제일
+                                </th>
+                                <th class="table_06 table_change">
+                                    결제금액 <br>
+                                    할인금액
+                                </th>
+                                <th class="table_06 table_change">
+                                    번역사 금액 <br>
+                                    최종정산액
+                                </th>
+                                <th class="table_06 table_change">
+                                    영업 수익 % <br>
+                                    수수료 비율
+                                </th>
+                                <th class="table_06 table_change">
+                                    총 매출금액
+                                </th>
+
+                                <!-- 휴텍씨 매출 -->
+                                <th class="table_07 table_change">
+                                    월정산 <br>
+                                    년정산
+                                </th>
+
+                                <!-- 기타 -->
+                                <th class="table_08 table_change">
+                                    >1:1 문의 <br>
+                                    견적서 </th>
+                                <th class="table_08 table_change">
+                                    >약관현황 <br>
+                                    채팅설정
+                                </th>
+                                <th class="table_08 table_change">
+                                    >평점/리뷰
+                                    상세
+                                </th>
+                                <th class="table_08 table_change">>관리자 메모</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>100</td>
+                                <td><input type="checkbox"></td>
+                                <td>
+                                    <a href="#"><img src="/img/admin/detail.svg" alt="자세히 보기"></a>홍길동 <br>
+                                    (남)99.0819
+                                </td>
+                                <td>
+                                    aite@gmail.com <br>
+                                    010-1234-1234
+                                </td>
+                                <td>
+                                    서울시 강남구 <br>
+                                    삼성2동 </td>
+                                <td class="table_01 table_change">
+                                    일반 <br>
+                                    활동/구독형
+                                </td>
+                                <td class="table_01 table_change">
+                                    22-10-44 <br>
+                                    (이메일)
+                                </td>
+                                <td class="table_01 table_change">
+                                    22-10-44 <br>
+                                    (30분)
+                                </td>
+                                <td class="table_01 table_change">
+                                    6
+                                </td>
+                                <td class="table_01 table_change">6</td>
+                                <td class="table_01 table_change">WEB<br />WEB</td>
+                                <td class="table_01 table_change">구독형</td>
+                                <td class="table_01 table_change">활동</td>
+                                <td class="table_01 table_change">6</td>
+                                <td class="table_01 table_change">15글자</td>
+
+                                <td class="table_02 table_change">6</td>
+                                <td class="table_02 table_change"><img src="/img/admin/ai.svg" alt="AI"></td>
+                                <td class="table_02 table_change"><img src="/img/admin/global.svg" alt=""></td>
+                                <td class="table_02 table_change">한국어<br><img src="/img/admin/down.svg" alt=""></td>
+                                <td class="table_02 table_change">영어<br><img src="/img/admin/down.svg" alt=""></td>
+                                <td class="table_02 table_change">이력서.doc</td>
+                                <td class="table_02 table_change">
+                                    <span class="bg-red">완 료</span>
+                                    <span class="bg-green">의뢰 요청</span>
+                                </td>
+                                <td class="table_02 table_change">
+                                    글자수 5000 <br>
+                                    단어수 1000
+                                </td>
+                                <td class="table_02 table_change">
+                                    YY-MM-DD <br>
+                                    3d
+                                </td>
+                                <td class="table_02 table_change"> </td>
+                                <td class="table_02 table_change">AI</td>
+                                <td class="table_02 table_change">100,000</td>
+                                <td class="table_02 table_change"><a href="#" class="btn-black">미리보기</a></td>
+                                <td class="table_02 table_change">
+                                    <span class="bg-purple">에디팅</span>
+                                    <span class="bg-lime">도착 T 번역 감수</span>
+                                </td>
+                                <td class="table_03 table_change">
+                                    100,000
+                                </td>
+                                <td class="table_03 table_change">
+                                    YY-MM-DD
+                                </td>
+                                <td class="table_03 table_change">
+                                    100000 <br>
+                                    50000
+                                </td>
+                                <td class="table_03 table_change">
+                                    (+) 100000 <br>
+                                    200.000
+                                </td>
+                                <td class="table_03 table_change">
+                                    <span class="bg-purple">에디팅</span>
+                                </td>
+                                <td class="table_03 table_change">
+                                    완료/승인 <br>
+                                    (발급)
+                                </td>
+                                <td class="table_03 table_change">
+                                </td>
+                                <td class="table_03 table_change">
+                                    홍길동(하나) <br>
+                                    901-910014-577
+                                </td>
+                                <td class="table_03 table_change"></td>
+                                <td class="table_03 table_change">
+                                    완료 (본인취소) <br>
+                                    YY-MM-DD
+                                </td>
+                                <td class="table_03 table_change">
+                                    100000
+                                </td>
+                                <td class="table_03 table_change">
+                                    홍길동(하나) <br>
+                                    901-910014-577
+                                </td>
+                                <td class="table_03 table_change"></td>
+
+                                <td class="table_04 table_change">
+                                    YY-MM-DD HH:MM
+                                </td>
+                                <td class="table_04 table_change">
+                                    100000 <br>
+                                    20,000
+                                </td>
+                                <td class="table_04 table_change">
+                                    100000 <br>
+                                    20,000
+                                </td>
+                                <td class="table_04 table_change">
+                                    100000
+                                </td>
+                                <td class="table_04 table_change">
+                                    50% <br>
+                                    20%
+                                </td>
+                                <td class="table_04 table_change">
+                                    승인완료/수기 <br>
+                                    (발급)
+                                </td>
+                                <td class="table_04 table_change">
+                                    <a href="#"><img src="/img/admin/download.svg" alt="다운로드"></a>
+                                </td>
+                                <td class="table_04 table_change">
+                                    홍길동(하나) <br>
+                                    901-910014-577
+                                </td>
+                                <td class="table_04 table_change"><span class="bg-red">완 료</span></td>
+                                <td class="table_04 table_change"></td>
+                                <td class="table_04 table_change">감수비</td>
+
+                                <td class="table_05 table_change">
+                                    6
+                                </td>
+                                <td class="table_05 table_change">
+                                    개인(감수 전문가) <br>
+                                    정치
+                                </td>
+                                <td class="table_05 table_change">
+
+                                </td>
+                                <td class="table_05 table_change">
+                                    오전 <br>
+                                    /0
+                                </td>
+                                <td class="table_05 table_change">
+                                    영 -> 한 <br>
+                                    3년 ->(상)
+                                </td>
+                                <td class="table_05 table_change">
+
+                                </td>
+                                <td class="table_05 table_change">
+                                    YY-MM-DD <br>
+                                    YY-MM-DD
+                                </td>
+                                <td class="table_05 table_change">
+                                    <a href="#"><img src="/img/admin/detail.svg" alt="자세히 보기"></a>
+                                </td>
+                                <td class="table_05 table_change"></td>
+
+                                <td class="table_06 table_change">
+                                    YY-MM-DD <br>
+                                    YY-MM-DD
+                                </td>
+                                <td class="table_06 table_change">
+                                    100.000 <br>
+                                    50.000
+                                </td>
+                                <td class="table_06 table_change">
+                                    100.000 <br>
+                                    50.000
+                                </td>
+                                <td class="table_06 table_change">
+
+                                </td>
+                                <td class="table_06 table_change">
+                                    100,000
+                                </td>
+
+                                <td class="table_07 table_change">
+                                    100.000 <br>
+                                    50.000
+                                </td>
+
+                                <td class="table_08 table_change">
+                                    믄의 <br>
+                                    이메일
+                                </td>
+                                <td class="table_08 table_change">
+                                    이용약관 <br>
+                                    설정
+                                </td>
+                                <td class="table_08 table_change">
+                                    5/ 5 <br>
+                                    <a href="#"><img src="/img/admin/detail.svg" alt="자세히 보기"></a>
+                                </td>
+                                <td class="table_08 table_change">
+
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                                <td>99</td>
+                                <td><input type="checkbox"></td>
+                                <td>
+                                    <a href="#"><img src="/img/admin/detail.svg" alt="자세히 보기"></a>홍길동 <br>
+                                    (남)99.0819
+                                </td>
+                                <td>
+                                    aite@gmail.com <br>
+                                    010-1234-1234
+                                </td>
+                                <td>
+                                    서울시 강남구 <br>
+                                    삼성2동 </td>
+                                <td class="table_01 table_change">
+                                    일반 <br>
+                                    활동/구독형
+                                </td>
+                                <td class="table_01 table_change">
+                                    22-10-44 <br>
+                                    (이메일)
+                                </td>
+                                <td class="table_01 table_change">
+                                    22-10-44 <br>
+                                    (30분)
+                                </td>
+                                <td class="table_01 table_change">
+                                    6
+                                </td>
+                                <td class="table_01 table_change">6</td>
+                                <td class="table_01 table_change">WEB<br />WEB</td>
+                                <td class="table_01 table_change">구독형</td>
+                                <td class="table_01 table_change">활동</td>
+                                <td class="table_01 table_change">6</td>
+                                <td class="table_01 table_change">15글자</td>
+
+                                <td class="table_02 table_change">6</td>
+                                <td class="table_02 table_change"><img src="/img/admin/devices.svg" alt=""></td>
+                                <td class="table_02 table_change"><img src="/img/admin/mic_double.png" alt=""></td>
+                                <td class="table_02 table_change">한국어<br><img src="/img/admin/down.svg" alt=""></td>
+                                <td class="table_02 table_change">일어<br><img src="/img/admin/down.svg" alt=""></td>
+                                <td class="table_02 table_change">음성.mp4</td>
+                                <td class="table_02 table_change">
+                                    <span class="bg-lime">견적중</span>
+                                    <span class="bg-purple">진행중</span>
+                                </td>
+                                <td class="table_02 table_change">
+                                    글자수 5000 <br>
+                                    단어수 1000
+                                </td>
+                                <td class="table_02 table_change">
+                                    YY-MM-DD <br>
+                                    3d
+                                </td>
+                                <td class="table_02 table_change"> </td>
+                                <td class="table_02 table_change">AI</td>
+                                <td class="table_02 table_change">100,000</td>
+                                <td class="table_02 table_change"><img src="/img/download.svg" alt="다운로드"></td>
+                                <td class="table_02 table_change">
+                                    <span class="bg-red">출발 S Text</span>
+                                    <span class="bg-lime">도착 T 번역 감수</span>
+                                </td>
+
+                                <td class="table_03 table_change">
+                                    100,000
+                                </td>
+                                <td class="table_03 table_change">
+                                    YY-MM-DD
+                                </td>
+                                <td class="table_03 table_change">
+                                    100000 <br>
+                                    50000
+                                </td>
+                                <td class="table_03 table_change">
+                                    (+) 100000 <br>
+                                    200.000
+                                </td>
+                                <td class="table_03 table_change">
+                                    <span class="bg-red">출발 S Text</span>
+                                </td>
+                                <td class="table_03 table_change">
+                                    완료/승인 <br>
+                                    (발급)
+                                </td>
+                                <td class="table_03 table_change">
+
+                                </td>
+                                <td class="table_03 table_change">
+                                    홍길동(하나) <br>
+                                    901-910014-577
+                                </td>
+                                <td class="table_03 table_change"></td>
+                                <td class="table_03 table_change">
+                                    완료 (본인취소) <br>
+                                    YY-MM-DD
+                                </td>
+                                <td class="table_03 table_change">
+                                    100000
+                                </td>
+                                <td class="table_03 table_change">
+                                    홍길동(하나) <br>
+                                    901-910014-577
+                                </td>
+                                <td class="table_03 table_change"></td>
+                                <td class="table_04 table_change">
+                                    YY-MM-DD HH:MM
+                                </td>
+                                <td class="table_04 table_change">
+                                    100000 <br>
+                                    20,000
+                                </td>
+                                <td class="table_04 table_change">
+                                    100000 <br>
+                                    20,000
+                                </td>
+                                <td class="table_04 table_change">
+                                    100000
+                                </td>
+                                <td class="table_04 table_change">
+                                    50% <br>
+                                    20%
+                                </td>
+                                <td class="table_04 table_change">
+                                    승인완료/수기 <br>
+                                    (발급)
+                                </td>
+                                <td class="table_04 table_change"></td>
+
+                                <td class="table_04 table_change">
+                                    홍길동(하나) <br>
+                                    901-910014-577
+                                </td>
+                                <td class="table_04 table_change"></td>
+                                <td class="table_04 table_change"></td>
+                                <td class="table_04 table_change">감수비</td>
+
+
+                                <td class="table_05 table_change">
+                                    6
+                                </td>
+                                <td class="table_05 table_change">
+                                    개인(감수 전문가) <br>
+                                    정치
+                                </td>
+                                <td class="table_05 table_change">
+
+                                </td>
+                                <td class="table_05 table_change">
+                                    오전 <br>
+                                    /0
+                                </td>
+                                <td class="table_05 table_change">
+                                    영 -> 한 <br>
+                                    3년 ->(상)
+                                </td>
+                                <td class="table_05 table_change">
+
+                                </td>
+                                <td class="table_05 table_change">
+                                    YY-MM-DD <br>
+                                    YY-MM-DD
+                                </td>
+                                <td class="table_05 table_change">
+                                    <a href="#"><img src="/img/admin/detail.svg" alt="자세히 보기"></a>
+                                </td>
+                                <td class="table_05 table_change"></td>
+
+                                <td class="table_06 table_change">
+                                    YY-MM-DD <br>
+                                    YY-MM-DD
+                                </td>
+                                <td class="table_06 table_change">
+                                    100.000 <br>
+                                    50.000
+                                </td>
+                                <td class="table_06 table_change">
+                                    100.000 <br>
+                                    50.000
+                                </td>
+                                <td class="table_06 table_change">
+
+                                </td>
+                                <td class="table_06 table_change">
+                                    100,000
+                                </td>
+
+                                <td class="table_07 table_change">
+                                    100.000 <br>
+                                    50.000
+                                </td>
+
+                                <td class="table_08 table_change">
+                                    믄의 <br>
+                                    이메일
+                                </td>
+                                <td class="table_08 table_change">
+                                    이용약관 <br>
+                                    설정
+                                </td>
+                                <td class="table_08 table_change">
+                                    5/ 5 <br>
+                                    <a href="#"><img src="/img/admin/detail.svg" alt="자세히 보기"></a>
+                                </td>
+                                <td class="table_08 table_change">
+
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>98</td>
+                                <td><input type="checkbox"></td>
+                                <td>
+                                    <a href="#"><img src="/img/admin/detail.svg" alt="자세히 보기"></a>홍길동 <br>
+                                    (남)99.0819
+                                </td>
+                                <td>
+                                    aite@gmail.com <br>
+                                    010-1234-1234
+                                </td>
+                                <td>
+                                    서울시 강남구 <br>
+                                    삼성2동 </td>
+                                <td class="table_01 table_change">
+                                    일반 <br>
+                                    활동/구독형
+                                </td>
+                                <td class="table_01 table_change">
+                                    22-10-44 <br>
+                                    (이메일)
+                                </td>
+                                <td class="table_01 table_change">
+                                    22-10-44 <br>
+                                    (30분)
+                                </td>
+                                <td class="table_01 table_change">
+                                    6
+                                </td>
+                                <td class="table_01 table_change">6</td>
+                                <td class="table_01 table_change">WEB<br />WEB</td>
+                                <td class="table_01 table_change">구독형</td>
+                                <td class="table_01 table_change">활동</td>
+                                <td class="table_01 table_change">6</td>
+                                <td class="table_01 table_change">15글자</td>
+                                <td class="table_02 table_change">6</td>
+                                <td class="table_02 table_change"><img src="/img/admin/personalcard.svg" alt=""></td>
+                                <td class="table_02 table_change"><img src="/img/admin/mic.png" alt=""></td>
+                                <td class="table_02 table_change">중국어<br><img src="/img/admin/down.svg" alt=""></td>
+                                <td class="table_02 table_change">독어<br><img src="/img/admin/down.svg" alt=""></td>
+                                <td class="table_02 table_change">음성.mp4</td>
+                                <td class="table_02 table_change">
+                                    <span class="bg-red">번역완료</span>
+                                    <span class="bg-red">번역완료</span>
+                                </td>
+                                <td class="table_02 table_change">
+                                    글자수 5000 <br>
+                                    단어수 1000
+                                </td>
+                                <td class="table_02 table_change">
+                                    YY-MM-DD <br>
+                                    3d
+                                </td>
+                                <td class="table_02 table_change"></td>
+                                <td class="table_02 table_change">AI</td>
+                                <td class="table_02 table_change">100,000</td>
+                                <td class="table_02 table_change"><a href="#" class="btn-black">미리보기</a></td>
+                                <td class="table_02 table_change">
+                                    <span class="bg-green">출발 T 감수</span>
+                                    <span class="bg-green">출발 T 감수</span>
+                                </td>
+
+                                <td class="table_03 table_change">
+                                    100,000
+                                </td>
+                                <td class="table_03 table_change">
+                                    YY-MM-DD
+                                </td>
+                                <td class="table_03 table_change">
+                                    100000 <br>
+                                    50000
+                                </td>
+                                <td class="table_03 table_change">
+                                    (+) 100000 <br>
+                                    200.000
+                                </td>
+                                <td class="table_03 table_change">
+                                    <span class="bg-green">출발 T 감수</span>
+                                </td>
+                                <td class="table_03 table_change">
+                                    완료/승인 <br>
+                                    (발급)
+                                </td>
+                                <td class="table_03 table_change">
+
+                                </td>
+                                <td class="table_03 table_change">
+                                    홍길동(하나) <br>
+                                    901-910014-577
+                                </td>
+                                <td class="table_03 table_change"></td>
+                                <td class="table_03 table_change">
+                                    완료 (본인취소) <br>
+                                    YY-MM-DD
+                                </td>
+                                <td class="table_03 table_change">
+                                    100000
+                                </td>
+                                <td class="table_03 table_change">
+                                    홍길동(하나) <br>
+                                    901-910014-577
+                                </td>
+                                <td class="table_03 table_change"></td>
+                                <td class="table_04 table_change">
+                                    YY-MM-DD HH:MM
+                                </td>
+                                <td class="table_04 table_change">
+                                    100000 <br>
+                                    20,000
+                                </td>
+                                <td class="table_04 table_change">
+                                    100000 <br>
+                                    20,000
+                                </td>
+                                <td class="table_04 table_change">
+                                    100000
+                                </td>
+                                <td class="table_04 table_change">
+                                    50% <br>
+                                    20%
+                                </td>
+                                <td class="table_04 table_change">
+                                    승인완료/수기 <br>
+                                    (발급)
+                                </td>
+                                <td class="table_04 table_change"></td>
+
+                                <td class="table_04 table_change">
+                                    홍길동(하나) <br>
+                                    901-910014-577
+                                </td>
+                                <td class="table_04 table_change"></td>
+                                <td class="table_04 table_change"></td>
+                                <td class="table_04 table_change">감수비</td>
+
+
+                                <td class="table_05 table_change">
+                                    6
+                                </td>
+                                <td class="table_05 table_change">
+                                    개인(감수 전문가) <br>
+                                    정치
+                                </td>
+                                <td class="table_05 table_change">
+
+                                </td>
+                                <td class="table_05 table_change">
+                                    오전 <br>
+                                    /0
+                                </td>
+                                <td class="table_05 table_change">
+                                    영 -> 한 <br>
+                                    3년 ->(상)
+                                </td>
+                                <td class="table_05 table_change">
+
+                                </td>
+                                <td class="table_05 table_change">
+                                    YY-MM-DD <br>
+                                    YY-MM-DD
+                                </td>
+                                <td class="table_05 table_change">
+                                    <a href="#"><img src="/img/admin/detail.svg" alt="자세히 보기"></a>
+                                </td>
+                                <td class="table_05 table_change"></td>
+
+                                <td class="table_06 table_change">
+                                    YY-MM-DD <br>
+                                    YY-MM-DD
+                                </td>
+                                <td class="table_06 table_change">
+                                    100.000 <br>
+                                    50.000
+                                </td>
+                                <td class="table_06 table_change">
+                                    100.000 <br>
+                                    50.000
+                                </td>
+                                <td class="table_06 table_change">
+
+                                </td>
+                                <td class="table_06 table_change">
+                                    100,000
+                                </td>
+
+                                <td class="table_07 table_change">
+                                    100.000 <br>
+                                    50.000
+                                </td>
+
+                                <td class="table_08 table_change">
+                                    믄의 <br>
+                                    이메일
+                                </td>
+                                <td class="table_08 table_change">
+                                    이용약관 <br>
+                                    설정
+                                </td>
+                                <td class="table_08 table_change">
+                                    5/ 5 <br>
+                                    <a href="#"><img src="/img/admin/detail.svg" alt="자세히 보기"></a>
+                                </td>
+                                <td class="table_08 table_change">
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>97</td>
+                                <td><input type="checkbox"></td>
+                                <td>
+                                    <a href="#"><img src="/img/admin/detail.svg" alt="자세히 보기"></a>홍길동 <br>
+                                    (남)99.0819
+                                </td>
+                                <td>
+                                    aite@gmail.com <br>
+                                    010-1234-1234
+                                </td>
+                                <td>
+                                    서울시 강남구 <br>
+                                    삼성2동 </td>
+                                <td class="table_01 table_change">
+                                    일반 <br>
+                                    활동/구독형
+                                </td>
+                                <td class="table_01 table_change">
+                                    22-10-44 <br>
+                                    (이메일)
+                                </td>
+                                <td class="table_01 table_change">
+                                    22-10-44 <br>
+                                    (30분)
+                                </td>
+                                <td class="table_01 table_change">
+                                    6
+                                </td>
+                                <td class="table_01 table_change">6</td>
+                                <td class="table_01 table_change">WEB<br />WEB</td>
+                                <td class="table_01 table_change">구독형</td>
+                                <td class="table_01 table_change">활동</td>
+                                <td class="table_01 table_change">6</td>
+                                <td class="table_01 table_change">15글자</td>
+                                <td class="table_02 table_change">6</td>
+                                <td class="table_02 table_change"><img src="/img/admin/teacher.svg" alt=""></td>
+                                <td class="table_02 table_change"><img src="/img/admin/zoom.svg" alt=""></td>
+                                <td class="table_02 table_change">한국어<br><img src="/img/admin/down.svg" alt=""></td>
+                                <td class="table_02 table_change">스페인어<br><img src="/img/admin/down.svg" alt=""></td>
+                                <td class="table_02 table_change">소개.mp4</td>
+                                <td class="table_02 table_change">
+                                    <span class="bg-d-gray">감수중</span>
+                                    <span class="bg-l-green">재요청</span>
+                                </td>
+                                <td class="table_02 table_change">
+                                    글자수 5000 <br>
+                                    단어수 1000
+                                </td>
+                                <td class="table_02 table_change">
+                                    YY-MM-DD <br>
+                                    3d
+                                </td>
+                                <td class="table_02 table_change"></td>
+                                <td class="table_02 table_change">AI</td>
+                                <td class="table_02 table_change">100,000</td>
+                                <td class="table_02 table_change"><a href="#" class="btn-black">미리보기</a></td>
+                                <td class="table_02 table_change">
+                                    <span class="bg-d-gray">도착 T AI 번역</span>
+                                    <span class="bg-d-gray">도착 T AI 번역</span>
+                                </td>
+
+                                <td class="table_03 table_change">
+                                    100,000
+                                </td>
+                                <td class="table_03 table_change">
+                                    YY-MM-DD
+                                </td>
+                                <td class="table_03 table_change">
+                                    100000 <br>
+                                    50000
+                                </td>
+                                <td class="table_03 table_change">
+                                    (+) 100000 <br>
+                                    200.000
+                                </td>
+                                <td class="table_03 table_change">
+                                    <span class="bg-d-gray">도착 T AI 번역</span>
+                                </td>
+                                <td class="table_03 table_change">
+                                    완료/승인 <br>
+                                    (발급)
+                                </td>
+                                <td class="table_03 table_change">
+
+                                </td>
+                                <td class="table_03 table_change">
+                                    홍길동(하나) <br>
+                                    901-910014-577
+                                </td>
+                                <td class="table_03 table_change"></td>
+                                <td class="table_03 table_change">
+                                    완료 (본인취소) <br>
+                                    YY-MM-DD
+                                </td>
+                                <td class="table_03 table_change">
+                                    100000
+                                </td>
+                                <td class="table_03 table_change">
+                                    홍길동(하나) <br>
+                                    901-910014-577
+                                </td>
+                                <td class="table_03 table_change"></td>
+                                <td class="table_04 table_change">
+                                    YY-MM-DD HH:MM
+                                </td>
+                                <td class="table_04 table_change">
+                                    100000 <br>
+                                    20,000
+                                </td>
+                                <td class="table_04 table_change">
+                                    100000 <br>
+                                    20,000
+                                </td>
+                                <td class="table_04 table_change">
+                                    100000
+                                </td>
+                                <td class="table_04 table_change">
+                                    50% <br>
+                                    20%
+                                </td>
+                                <td class="table_04 table_change">
+                                    승인완료/수기 <br>
+                                    (발급)
+                                </td>
+                                <td class="table_04 table_change"></td>
+
+                                <td class="table_04 table_change">
+                                    홍길동(하나) <br>
+                                    901-910014-577
+                                </td>
+                                <td class="table_04 table_change"></td>
+                                <td class="table_04 table_change"></td>
+                                <td class="table_04 table_change">감수비</td>
+
+
+                                <td class="table_05 table_change">
+                                    6
+                                </td>
+                                <td class="table_05 table_change">
+                                    개인(감수 전문가) <br>
+                                    정치
+                                </td>
+                                <td class="table_05 table_change">
+
+                                </td>
+                                <td class="table_05 table_change">
+                                    오전 <br>
+                                    /0
+                                </td>
+                                <td class="table_05 table_change">
+                                    영 -> 한 <br>
+                                    3년 ->(상)
+                                </td>
+                                <td class="table_05 table_change">
+
+                                </td>
+                                <td class="table_05 table_change">
+                                    YY-MM-DD <br>
+                                    YY-MM-DD
+                                </td>
+                                <td class="table_05 table_change">
+                                    <a href="#"><img src="/img/admin/detail.svg" alt="자세히 보기"></a>
+                                </td>
+                                <td class="table_05 table_change"></td>
+
+                                <td class="table_06 table_change">
+                                    YY-MM-DD <br>
+                                    YY-MM-DD
+                                </td>
+                                <td class="table_06 table_change">
+                                    100.000 <br>
+                                    50.000
+                                </td>
+                                <td class="table_06 table_change">
+                                    100.000 <br>
+                                    50.000
+                                </td>
+                                <td class="table_06 table_change">
+
+                                </td>
+                                <td class="table_06 table_change">
+                                    100,000
+                                </td>
+
+                                <td class="table_07 table_change">
+                                    100.000 <br>
+                                    50.000
+                                </td>
+
+                                <td class="table_08 table_change">
+                                    믄의 <br>
+                                    이메일
+                                </td>
+                                <td class="table_08 table_change">
+                                    이용약관 <br>
+                                    설정
+                                </td>
+                                <td class="table_08 table_change">
+                                    5/ 5 <br>
+                                    <a href="#"><img src="/img/admin/detail.svg" alt="자세히 보기"></a>
+                                </td>
+                                <td class="table_08 table_change">
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>96</td>
+                                <td><input type="checkbox"></td>
+                                <td>
+                                    <a href="#"><img src="/img/admin/detail.svg" alt="자세히 보기"></a>홍길동 <br>
+                                    (남)99.0819
+                                </td>
+                                <td>
+                                    aite@gmail.com <br>
+                                    010-1234-1234
+                                </td>
+                                <td>
+                                    서울시 강남구 <br>
+                                    삼성2동 </td>
+                                <td class="table_01 table_change">
+                                    일반 <br>
+                                    활동/구독형
+                                </td>
+                                <td class="table_01 table_change">
+                                    22-10-44 <br>
+                                    (이메일)
+                                </td>
+                                <td class="table_01 table_change">
+                                    22-10-44 <br>
+                                    (30분)
+                                </td>
+                                <td class="table_01 table_change">
+                                    6
+                                </td>
+                                <td class="table_01 table_change">6</td>
+                                <td class="table_01 table_change">WEB<br />WEB</td>
+                                <td class="table_01 table_change">구독형</td>
+                                <td class="table_01 table_change">활동</td>
+                                <td class="table_01 table_change">6</td>
+                                <td class="table_01 table_change">15글자</td>
+                                <td class="table_02 table_change">6</td>
+                                <td class="table_02 table_change"><img src="/img/admin/ai.svg" alt="AI"></td>
+                                <td class="table_02 table_change"><img src="/img/admin/zoom.svg" alt=""></td>
+                                <td class="table_02 table_change">영어<br><img src="/img/admin/down.svg" alt=""></td>
+                                <td class="table_02 table_change">아랍어<br><img src="/img/admin/down.svg" alt=""></td>
+                                <td class="table_02 table_change">
+                                    <a href="https://youtube.com/korea" target="_blank">https://youtube.com/korea</a>
+                                </td>
+                                <td class="table_02 table_change">
+                                    <span class="bg-d-lime">재요청</span>
+                                    <span class="bg-black">취 소</span>
+                                </td>
+                                <td class="table_02 table_change">
+                                    글자수 5000 <br>
+                                    단어수 1000
+                                </td>
+                                <td class="table_02 table_change">
+                                    YY-MM-DD <br>
+                                    3d
+                                </td>
+                                <td class="table_02 table_change"></td>
+                                <td class="table_02 table_change">AI</td>
+                                <td class="table_02 table_change">100,000</td>
+                                <td class="table_02 table_change"><a href="#" class="btn-black">미리보기</a></td>
+                                <td class="table_02 table_change">
+                                    <span class="bg-lime">도착 T 번역 감수</span>
+                                    <span class="bg-red">출발 S Text</span>
+                                </td>
+
+                                <td class="table_03 table_change">
+                                    100,000
+                                </td>
+                                <td class="table_03 table_change">
+                                    YY-MM-DD
+                                </td>
+                                <td class="table_03 table_change">
+                                    100000 <br>
+                                    50000
+                                </td>
+                                <td class="table_03 table_change">
+                                    (+) 100000 <br>
+                                    200.000
+                                </td>
+                                <td class="table_03 table_change">
+                                    <span class="bg-lime">도착 T 번역 감수</span>
+                                </td>
+                                <td class="table_03 table_change">
+                                    완료/승인 <br>
+                                    (발급)
+                                </td>
+                                <td class="table_03 table_change">
+
+                                </td>
+                                <td class="table_03 table_change">
+                                    홍길동(하나) <br>
+                                    901-910014-577
+                                </td>
+                                <td class="table_03 table_change"></td>
+                                <td class="table_03 table_change">
+                                    완료 (본인취소) <br>
+                                    YY-MM-DD
+                                </td>
+                                <td class="table_03 table_change">
+                                    100000
+                                </td>
+                                <td class="table_03 table_change">
+                                    홍길동(하나) <br>
+                                    901-910014-577
+                                </td>
+                                <td class="table_03 table_change"></td>
+                                <td class="table_04 table_change">
+                                    YY-MM-DD HH:MM
+                                </td>
+                                <td class="table_04 table_change">
+                                    100000 <br>
+                                    20,000
+                                </td>
+                                <td class="table_04 table_change">
+                                    100000 <br>
+                                    20,000
+                                </td>
+                                <td class="table_04 table_change">
+                                    100000
+                                </td>
+                                <td class="table_04 table_change">
+                                    50% <br>
+                                    20%
+                                </td>
+                                <td class="table_04 table_change">
+                                    승인완료/수기 <br>
+                                    (발급)
+                                </td>
+                                <td class="table_04 table_change"></td>
+
+                                <td class="table_04 table_change">
+                                    홍길동(하나) <br>
+                                    901-910014-577
+                                </td>
+                                <td class="table_04 table_change"></td>
+                                <td class="table_04 table_change"></td>
+                                <td class="table_04 table_change">감수비</td>
+
+
+                                <td class="table_05 table_change">
+                                    6
+                                </td>
+                                <td class="table_05 table_change">
+                                    개인(감수 전문가) <br>
+                                    정치
+                                </td>
+                                <td class="table_05 table_change">
+
+                                </td>
+                                <td class="table_05 table_change">
+                                    오전 <br>
+                                    /0
+                                </td>
+                                <td class="table_05 table_change">
+                                    영 -> 한 <br>
+                                    3년 ->(상)
+                                </td>
+                                <td class="table_05 table_change">
+
+                                </td>
+                                <td class="table_05 table_change">
+                                    YY-MM-DD <br>
+                                    YY-MM-DD
+                                </td>
+                                <td class="table_05 table_change">
+                                    <a href="#"><img src="/img/admin/detail.svg" alt="자세히 보기"></a>
+                                </td>
+                                <td class="table_05 table_change"></td>
+
+                                <td class="table_06 table_change">
+                                    YY-MM-DD <br>
+                                    YY-MM-DD
+                                </td>
+                                <td class="table_06 table_change">
+                                    100.000 <br>
+                                    50.000
+                                </td>
+                                <td class="table_06 table_change">
+                                    100.000 <br>
+                                    50.000
+                                </td>
+                                <td class="table_06 table_change">
+
+                                </td>
+                                <td class="table_06 table_change">
+                                    100,000
+                                </td>
+
+                                <td class="table_07 table_change">
+                                    100.000 <br>
+                                    50.000
+                                </td>
+
+                                <td class="table_08 table_change">
+                                    믄의 <br>
+                                    이메일
+                                </td>
+                                <td class="table_08 table_change">
+                                    이용약관 <br>
+                                    설정
+                                </td>
+                                <td class="table_08 table_change">
+                                    5/ 5 <br>
+                                    <a href="#"><img src="/img/admin/detail.svg" alt="자세히 보기"></a>
+                                </td>
+                                <td class="table_08 table_change">
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>95</td>
+                                <td><input type="checkbox"></td>
+                                <td>
+                                    <a href="#"><img src="/img/admin/detail.svg" alt="자세히 보기"></a>홍길동 <br>
+                                    (남)99.0819
+                                </td>
+                                <td>
+                                    aite@gmail.com <br>
+                                    010-1234-1234
+                                </td>
+                                <td>
+                                    서울시 강남구 <br>
+                                    삼성2동 </td>
+                                <td class="table_01 table_change">
+                                    일반 <br>
+                                    활동/구독형
+                                </td>
+                                <td class="table_01 table_change">
+                                    22-10-44 <br>
+                                    (이메일)
+                                </td>
+                                <td class="table_01 table_change">
+                                    22-10-44 <br>
+                                    (30분)
+                                </td>
+                                <td class="table_01 table_change">
+                                    6
+                                </td>
+                                <td class="table_01 table_change">6</td>
+                                <td class="table_01 table_change">WEB<br />WEB</td>
+                                <td class="table_01 table_change">구독형</td>
+                                <td class="table_01 table_change">활동</td>
+                                <td class="table_01 table_change">6</td>
+                                <td class="table_01 table_change">15글자</td>
+                                <td class="table_02 table_change">6</td>
+                                <td class="table_02 table_change"><img src="/img/admin/ai.svg" alt="AI"></td>
+                                <td class="table_02 table_change"><img src="/img/admin/youtube.svg" alt=""></td>
+                                <td class="table_02 table_change">스페인어<br><img src="/img/admin/down.svg" alt=""></td>
+                                <td class="table_02 table_change">그리스어<br><img src="/img/admin/down.svg" alt=""></td>
+                                <td class="table_02 table_change"> <a href="https://youtube.com/korea"
+                                        target="_blank">https://youtube.com/korea</a></td>
+                                <td class="table_02 table_change">
+                                    <span class="bg-black">취소</span>
+                                    <span class="bg-black">취소</span>
+                                </td>
+                                <td class="table_02 table_change">
+                                    글자수 5000 <br>
+                                    단어수 1000
+                                </td>
+                                <td class="table_02 table_change">
+                                    YY-MM-DD <br>
+                                    3d
+                                </td>
+                                <td class="table_02 table_change"></td>
+                                <td class="table_02 table_change">AI</td>
+                                <td class="table_02 table_change">100,000</td>
+                                <td class="table_02 table_change"><a href="#" class="btn-black">미리보기</a></td>
+                                <td class="table_02 table_change">
+                                    <span class="bg-purple">에디팅</span>
+                                    <span class="bg-red">출발 S Text</span>
+                                </td>
+                                <td class="table_03 table_change">
+                                    100,000
+                                </td>
+                                <td class="table_03 table_change">
+                                    YY-MM-DD
+                                </td>
+                                <td class="table_03 table_change">
+                                    100000 <br>
+                                    50000
+                                </td>
+                                <td class="table_03 table_change">
+                                    (+) 100000 <br>
+                                    200.000
+                                </td>
+                                <td class="table_03 table_change"></td>
+                                <td class="table_03 table_change">
+                                    완료/승인 <br>
+                                    (발급)
+                                </td>
+                                <td class="table_03 table_change">
+
+                                </td>
+                                <td class="table_03 table_change">
+                                    홍길동(하나) <br>
+                                    901-910014-577
+                                </td>
+                                <td class="table_03 table_change"></td>
+                                <td class="table_03 table_change">
+                                    완료 (본인취소) <br>
+                                    YY-MM-DD
+                                </td>
+                                <td class="table_03 table_change">
+                                    100000
+                                </td>
+                                <td class="table_03 table_change">
+                                    홍길동(하나) <br>
+                                    901-910014-577
+                                </td>
+                                <td class="table_03 table_change"></td>
+                                <td class="table_04 table_change">
+                                    YY-MM-DD HH:MM
+                                </td>
+                                <td class="table_04 table_change">
+                                    100000 <br>
+                                    20,000
+                                </td>
+                                <td class="table_04 table_change">
+                                    100000 <br>
+                                    20,000
+                                </td>
+                                <td class="table_04 table_change">
+                                    100000
+                                </td>
+                                <td class="table_04 table_change">
+                                    50% <br>
+                                    20%
+                                </td>
+                                <td class="table_04 table_change">
+                                    승인완료/수기 <br>
+                                    (발급)
+                                </td>
+                                <td class="table_04 table_change"></td>
+
+                                <td class="table_04 table_change">
+                                    홍길동(하나) <br>
+                                    901-910014-577
+                                </td>
+                                <td class="table_04 table_change"></td>
+                                <td class="table_04 table_change"></td>
+                                <td class="table_04 table_change">감수비</td>
+
+                                <td class="table_05 table_change">
+                                    6
+                                </td>
+                                <td class="table_05 table_change">
+                                    개인(감수 전문가) <br>
+                                    정치
+                                </td>
+                                <td class="table_05 table_change">
+
+                                </td>
+                                <td class="table_05 table_change">
+                                    오전 <br>
+                                    /0
+                                </td>
+                                <td class="table_05 table_change">
+                                    영 -> 한 <br>
+                                    3년 ->(상)
+                                </td>
+                                <td class="table_05 table_change">
+
+                                </td>
+                                <td class="table_05 table_change">
+                                    YY-MM-DD <br>
+                                    YY-MM-DD
+                                </td>
+                                <td class="table_05 table_change">
+                                    <a href="#"><img src="/img/admin/detail.svg" alt="자세히 보기"></a>
+                                </td>
+                                <td class="table_05 table_change"></td>
+
+                                <td class="table_06 table_change">
+                                    YY-MM-DD <br>
+                                    YY-MM-DD
+                                </td>
+                                <td class="table_06 table_change">
+                                    100.000 <br>
+                                    50.000
+                                </td>
+                                <td class="table_06 table_change">
+                                    100.000 <br>
+                                    50.000
+                                </td>
+                                <td class="table_06 table_change">
+
+                                </td>
+                                <td class="table_06 table_change">
+                                    100,000
+                                </td>
+
+                                <td class="table_07 table_change">
+                                    100.000 <br>
+                                    50.000
+                                </td>
+
+                                <td class="table_08 table_change">
+                                    믄의 <br>
+                                    이메일
+                                </td>
+                                <td class="table_08 table_change">
+                                    이용약관 <br>
+                                    설정
+                                </td>
+                                <td class="table_08 table_change">
+                                    5/ 5 <br>
+                                    <a href="#"><img src="/img/admin/detail.svg" alt="자세히 보기"></a>
+                                </td>
+                                <td class="table_08 table_change">
+
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+			<script>
+			$('.category_change').on('click', function(){
+				if ($('#table_flag').val() != '1')
+				{
+					$('.table_change').css('opacity', '0');
+					$('.table_change').css('display', 'none');
+					$('.category_change').css('opacity', '0.9');
+					$('.category_change').css('background-color', '#aeaeae');
+					$('#table_flag').val('1');
+				}
+				if ($(this).css('opacity') != '1')
+				{
+					$('.table_change').css('opacity', '0');
+					$('.table_change').css('display', 'none');
+					$('.category_change').css('opacity', '0.9');
+					$('.category_change').css('background-color', '#aeaeae');
+					$('.'+$(this).data('classname')).css('opacity', '1');
+					$('.'+$(this).data('classname')).css('display', 'table-cell');
+					$(this).css('opacity', '1');
+					$(this).css('background-color', '#85b6ff');
+				}
+				else
+				{
+					$('.table_change').css('opacity', '1');
+					$('.table_change').css('display', 'table-cell');
+					$('.category_change').css('opacity', '1');
+					$('.category_change').css('background-color', '#85b6ff');
+					$('#table_flag').val('0');
+				}
+			});
+			function category_all(){
+				$('.table_change').css('opacity', '1');
+				$('.table_change').css('display', 'table-cell');
+				$('.category_change').css('opacity', '1');
+				$('.category_change').css('background-color', '#85b6ff');
+				$('#opacity_flag').val('0');
+			}
+			</script>
+
+            <!-- table -->
+
+            <!-- pagination -->
+            <div class="mgt-30">
+                <div class="admin-pagination">
+					<ul class="pagenum">
+						<li class="button2"><a href="#none" onclick="return false;" class="board_button"><img src="/img/layout/btn_pprev.png" alt="이전" class="btn_pprev"></a></li><li class="button2"><a href="#none" onclick="return false;" class="board_button"><img src="/img/layout/btn_prev.png" alt="이전" class="btn_prev"></a></li><li><a href="#none" onclick="return false;" class="page-numbers current" title="1페이지">1</a></li><li><a href="?pagenum=1&amp;search_select=&amp;keyword=&amp;category_idx=219" class="page-numbers" title="2페이지로 이동합니다.">2</a></li><li><a href="?pagenum=2&amp;search_select=&amp;keyword=&amp;category_idx=219" class="page-numbers" title="3페이지로 이동합니다.">3</a></li><li><a href="?pagenum=3&amp;search_select=&amp;keyword=&amp;category_idx=219" class="page-numbers" title="4페이지로 이동합니다.">4</a></li><li><a href="?pagenum=4&amp;search_select=&amp;keyword=&amp;category_idx=219" class="page-numbers" title="5페이지로 이동합니다.">5</a></li><li><a href="?pagenum=5&amp;search_select=&amp;keyword=&amp;category_idx=219" class="page-numbers" title="6페이지로 이동합니다.">6</a></li><li><a href="?pagenum=6&amp;search_select=&amp;keyword=&amp;category_idx=219" class="page-numbers" title="7페이지로 이동합니다.">7</a></li><li><a href="?pagenum=7&amp;search_select=&amp;keyword=&amp;category_idx=219" class="page-numbers" title="8페이지로 이동합니다.">8</a></li><li><a href="?pagenum=8&amp;search_select=&amp;keyword=&amp;category_idx=219" class="page-numbers" title="9페이지로 이동합니다.">9</a></li><li><a href="?pagenum=9&amp;search_select=&amp;keyword=&amp;category_idx=219" class="page-numbers" title="10페이지로 이동합니다.">10</a></li><li class="button2"><a href="?pagenum=10&amp;search_select=&amp;keyword=&amp;category_idx=219" class="board_button"><img src="/img/layout/btn_next.png" alt="다음" class="btn_next"></a></li><li class="button2"><a href="?pagenum=10&amp;search_select=&amp;keyword=&amp;category_idx=219" class="board_button"><img src="/img/layout/btn_nnext.png" alt="다음" class="btn_next"></a></li>
+					</ul>
+				</div>
+            </div>
+        </div>
+    </div>
+</div>

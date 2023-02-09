@@ -1,0 +1,8 @@
+<link rel="stylesheet" href="/css/admin.css">
+<style>
+
+  .container, .container-sm, .container-md, .container-lg, .container-xl {
+    max-width: 1920px !important }
+.search-result-table {table-layout: fixed; max-width: 1900px !important; overflow-x: scroll;}
+
+</style>
