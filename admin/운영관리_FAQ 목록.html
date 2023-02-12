@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ 목록</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+
+    <script src="js/jquery-1.12.2.min.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="logo">
+                <h1>
+                    <a href="#">
+                        Administrator
+                    </a>
+                </h1>
+            </div>
+            <!-- //logo -->
+
+            <div class="header_right">
+                <span class="adm_text">
+                    관리자(2022-03-01 14:43)
+                </span>
+                <!-- //adm_text -->
+
+                <a href="#" class="logout">
+                    로그아웃
+                </a>
+
+            </div>
+            <!-- //header_right -->
+
+        </header>
+        <!-- //header -->
+
+        <main>
+            <div class="content">
+                <aside id="aside">
+                    <ul class="list1">
+                        <li>
+                            <a href="#">
+                                <span>대시보드</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>회원 관리</span>
+                            </a>
+                        </li>
+                        <ul class="list2">
+                            <li>
+                                <a href="#">
+                                    <span>
+                                        • 전체 회원
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>
+                                        • 일반 회원
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>
+                                        • 번역사 회원 신청 관리
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>
+                                        • 기업 회원 (B to B)
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>
+                                        • 관리자 회원
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- //list2 -->
+                        <li>
+                            <a href="#">
+                                <span>번역 관리</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>결제 관리</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>정산 관리</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>수익 관리</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>운영 관리</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>블로그 관리</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- //list1 -->
+
+                </aside>
+                <!-- /aside -->
+
+                <section id="section" class="st1">
+                    <div class="tit">
+                        <h2>
+                            자주 묻는 질문
+                        </h2>
+                    </div>
+                    <!-- //tit -->
+
+                    <div class="com_table_box adm_banner_box">
+                        <table class="com_table">
+                            <caption class="blind">자주 묻는 질문 검색</caption>
+                            <colgroup>
+                                <col width="250">
+                                <col width="1167">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>
+                                        공개 여부
+                                    </th>
+                                    <td>
+                                        <div class="table_com_btn">
+                                            <a href="#" class="active">전체</a>
+                                            <a href="#">공개</a>
+                                            <a href="#">비공개</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        등록일시
+                                    </th>
+                                    <td>
+                                        <div class="period_box">
+                                            <!-- //calendar_wrap -->
+                                            <div class="calendar_wrap">
+                                                <div class="calendar_box">
+                                                    <input id="1" type="text" placeholder="21.05.01" readonly>
+                                                    <label for="1" class="blind">달력</label>
+                                                    <button class="calendar_btn">달력</button>
+                                                </div>
+                                                ~
+                                                <div class="calendar_box">
+                                                    <input id="2" type="text" placeholder="21.05.01" readonly>
+                                                    <label for="2" class="blind">달력</label>
+                                                    <button class="calendar_btn">달력</button>
+                                                </div>
+                                            </div>
+                                            <!-- //calendar_wrap -->
+
+                                            <div class="period_list">
+                                                <a href="#" class="period_color1">어제</a>
+                                                <a href="#" class="period_color1">오늘</a>
+                                                <a href="#" class="period_color2">1개월</a>
+                                                <a href="#" class="period_color2">3개월</a>
+                                                <a href="#" class="period_color2">6개월</a>
+                                                <a href="#" class="period_color2">1년</a>
+                                            </div>
+                                            <!-- //period_list -->
+
+                                        </div>
+                                        <!-- //period_box -->
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        조건 검색
+                                    </th>
+                                    <td class="search">
+                                        <div class="period_box">
+                                            <select class="period_select">
+                                                <option>
+                                                    제목
+                                                </option>
+                                                <option>
+                                                    내용
+                                                </option>
+                                            </select>
+                                            <div class="com_input_box">
+                                                <input id="3" type="text" placeholder="검색어 입력">
+                                                <label for="3" class="blind">검색어 입력</label>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- //com_table -->
+
+                    </div>
+                    <!-- //com_table_box -->
+
+                    <div class="com_btn st">
+                        <a href="#" class="reset">초기화</a>
+                        <a href="#">검색</a>
+                    </div>
+
+                    <div class="com_table_box st">
+                        <div class="search_top">
+                            <span class="search_text">총 <em>100</em>개</span>
+                            <select id="4" class="search_count">
+                                <option>20개</option>
+                            </select>
+                            <label for="4" class="blind">개수</label>
+                        </div>
+                        <!-- //search_top -->
+
+                        <table class="com_table">
+                            <caption class="blind">자주 묻는 질문</caption>
+                            <colgroup>
+                                <col width="5%">
+                                <col widht="5%">
+                                <col width="15%">
+                                <col width="35%">
+                                <col width="35%">
+                                <col width="15%">
+                                <col width="10%">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>No</th>
+                                    <th>순서</th>
+                                    <th>유형</th>
+                                    <th>질문</th>
+                                    <th>답변</th>
+                                    <th>공개/비공개</th>
+                                    <th>관리</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>100</td>
+                                    <td>
+                                        <input id="4" type="text">
+                                        <label for="4" class="blind">메인 배너 순서</label>
+                                    </td>
+                                    </td>
+                                    <td>
+                                        결제
+                                    </td>
+                                    <td>
+                                        해외 거주중으로 휴대폰 인증이 안되는 경우는 어떻게 하나요?
+                                    </td>
+                                    <td>
+                                        <div class="text_box">
+                                            해외 거주자의 경우 아이핀 인증만 가능하며, 아이핀 해외 거주자의 경우 아이핀 인증만 가능하며, 아이핀 해외 거주자의 경우 아이핀 인증만
+                                            가능하며, 아이핀
+                                        </div>
+                                    </td>
+                                    <td>
+                                        공개
+                                    </td>
+                                    <td>
+                                        <a href="#" class="table_com_btn st">
+                                            관리
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>99</td>
+                                    <td>
+                                        <input id="4" type="text">
+                                        <label for="4" class="blind">메인 배너 순서</label>
+                                    </td>
+                                    </td>
+                                    <td>
+                                        번역
+                                    </td>
+                                    <td>
+                                        해외 거주중으로 휴대폰 인증이 안되는 경우는 어떻게 하나요?
+                                    </td>
+                                    <td>
+                                        <div class="text_box">
+                                            해외 거주자의 경우 아이핀 인증만 가능하며, 아이핀 해외 거주자의 경우 아이핀 인증만 가능하며, 아이핀 해외 거주자의 경우 아이핀 인증만
+                                            가능하며, 아이핀
+                                        </div>
+                                    </td>
+                                    <td>
+                                        공개
+                                    </td>
+                                    <td>
+                                        <a href="#" class="table_com_btn st">
+                                            관리
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>98</td>
+                                    <td>
+                                        <input id="4" type="text">
+                                        <label for="4" class="blind">메인 배너 순서</label>
+                                    </td>
+                                    </td>
+                                    <td>
+                                        회원가입/로그인
+                                    </td>
+                                    <td>
+                                        해외 거주중으로 휴대폰 인증이 안되는 경우는 어떻게 하나요?
+                                    </td>
+                                    <td>
+                                        <div class="text_box">
+                                            해외 거주자의 경우 아이핀 인증만 가능하며, 아이핀 해외 거주자의 경우 아이핀 인증만 가능하며, 아이핀 해외 거주자의 경우 아이핀 인증만
+                                            가능하며, 아이핀
+                                        </div>
+                                    </td>
+                                    <td>
+                                        공개
+                                    </td>
+                                    <td>
+                                        <a href="#" class="table_com_btn st">
+                                            관리
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>97</td>
+                                    <td>
+                                        <input id="4" type="text">
+                                        <label for="4" class="blind">메인 배너 순서</label>
+                                    </td>
+                                    </td>
+                                    <td>
+                                        취소/환불
+                                    </td>
+                                    <td>
+                                        해외 거주중으로 휴대폰 인증이 안되는 경우는 어떻게 하나요?
+                                    </td>
+                                    <td>
+                                        <div class="text_box">
+                                            해외 거주자의 경우 아이핀 인증만 가능하며, 아이핀 해외 거주자의 경우 아이핀 인증만 가능하며, 아이핀 해외 거주자의 경우 아이핀 인증만
+                                            가능하며, 아이핀
+                                        </div>
+                                    </td>
+                                    <td>
+                                        공개
+                                    </td>
+                                    <td>
+                                        <a href="#" class="table_com_btn st">
+                                            관리
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>96</td>
+                                    <td>
+                                        <input id="4" type="text">
+                                        <label for="4" class="blind">메인 배너 순서</label>
+                                    </td>
+                                    </td>
+                                    <td>
+                                        취소/환불
+                                    </td>
+                                    <td>
+                                        해외 거주중으로 휴대폰 인증이 안되는 경우는 어떻게 하나요?
+                                    </td>
+                                    <td>
+                                        <div class="text_box">
+                                            해외 거주자의 경우 아이핀 인증만 가능하며, 아이핀 해외 거주자의 경우 아이핀 인증만 가능하며, 아이핀 해외 거주자의 경우 아이핀 인증만
+                                            가능하며, 아이핀
+                                        </div>
+                                    </td>
+                                    <td>
+                                        공개
+                                    </td>
+                                    <td>
+                                        <a href="#" class="table_com_btn st">
+                                            관리
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>95</td>
+                                    <td>
+                                        <input id="4" type="text">
+                                        <label for="4" class="blind">메인 배너 순서</label>
+                                    </td>
+                                    </td>
+                                    <td>
+                                        취소/환불
+                                    </td>
+                                    <td>
+                                        해외 거주중으로 휴대폰 인증이 안되는 경우는 어떻게 하나요?
+                                    </td>
+                                    <td>
+                                        <div class="text_box">
+                                            해외 거주자의 경우 아이핀 인증만 가능하며, 아이핀 해외 거주자의 경우 아이핀 인증만 가능하며, 아이핀 해외 거주자의 경우 아이핀 인증만
+                                            가능하며, 아이핀
+                                        </div>
+                                    </td>
+                                    <td>
+                                        공개
+                                    </td>
+                                    <td>
+                                        <a href="#" class="table_com_btn st">
+                                            관리
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>94</td>
+                                    <td>
+                                        <input id="4" type="text">
+                                        <label for="4" class="blind">메인 배너 순서</label>
+                                    </td>
+                                    </td>
+                                    <td>
+                                        취소/환불
+                                    </td>
+                                    <td>
+                                        해외 거주중으로 휴대폰 인증이 안되는 경우는 어떻게 하나요?
+                                    </td>
+                                    <td>
+                                        <div class="text_box">
+                                            해외 거주자의 경우 아이핀 인증만 가능하며, 아이핀 해외 거주자의 경우 아이핀 인증만 가능하며, 아이핀 해외 거주자의 경우 아이핀 인증만
+                                            가능하며, 아이핀
+                                        </div>
+                                    </td>
+                                    <td>
+                                        공개
+                                    </td>
+                                    <td>
+                                        <a href="#" class="table_com_btn st">
+                                            관리
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>93</td>
+                                    <td>
+                                        <input id="4" type="text">
+                                        <label for="4" class="blind">메인 배너 순서</label>
+                                    </td>
+                                    </td>
+                                    <td>
+                                        취소/환불
+                                    </td>
+                                    <td>
+                                        해외 거주중으로 휴대폰 인증이 안되는 경우는 어떻게 하나요?
+                                    </td>
+                                    <td>
+                                        <div class="text_box">
+                                            해외 거주자의 경우 아이핀 인증만 가능하며, 아이핀 해외 거주자의 경우 아이핀 인증만 가능하며, 아이핀 해외 거주자의 경우 아이핀 인증만
+                                            가능하며, 아이핀
+                                        </div>
+                                    </td>
+                                    <td>
+                                        공개
+                                    </td>
+                                    <td>
+                                        <a href="#" class="table_com_btn st">
+                                            관리
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>92</td>
+                                    <td>
+                                        <input id="4" type="text">
+                                        <label for="4" class="blind">메인 배너 순서</label>
+                                    </td>
+                                    </td>
+                                    <td>
+                                        취소/환불
+                                    </td>
+                                    <td>
+                                        해외 거주중으로 휴대폰 인증이 안되는 경우는 어떻게 하나요?
+                                    </td>
+                                    <td>
+                                        <div class="text_box">
+                                            해외 거주자의 경우 아이핀 인증만 가능하며, 아이핀 해외 거주자의 경우 아이핀 인증만 가능하며, 아이핀 해외 거주자의 경우 아이핀 인증만
+                                            가능하며, 아이핀
+                                        </div>
+                                    </td>
+                                    <td>
+                                        공개
+                                    </td>
+                                    <td>
+                                        <a href="#" class="table_com_btn st">
+                                            관리
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>91</td>
+                                    <td>
+                                        <input id="4" type="text">
+                                        <label for="4" class="blind">메인 배너 순서</label>
+                                    </td>
+                                    </td>
+                                    <td>
+                                        취소/환불
+                                    </td>
+                                    <td>
+                                        해외 거주중으로 휴대폰 인증이 안되는 경우는 어떻게 하나요?
+                                    </td>
+                                    <td>
+                                        <div class="text_box">
+                                            해외 거주자의 경우 아이핀 인증만 가능하며, 아이핀 해외 거주자의 경우 아이핀 인증만 가능하며, 아이핀 해외 거주자의 경우 아이핀 인증만
+                                            가능하며, 아이핀
+                                        </div>
+                                    </td>
+                                    <td>
+                                        공개
+                                    </td>
+                                    <td>
+                                        <a href="#" class="table_com_btn st">
+                                            관리
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- //com_table -->
+
+                    </div>
+                    <!-- //com_table_box -->
+
+                    <div class="page_wrap">
+                        <span class="page_text"><em>1</em> of 84 pages</span>
+                        <div class="page_box">
+                            <button class="prev_first"><span class="blind">10페이지 앞으로 이동</span></button>
+                            <button class="prev"><span class="blind">1페이지 앞으로 이동</span></button>
+                            <ul class="page_list">
+                                <li>
+                                    <a href="#" class="active">
+                                        1
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        2
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        3
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        4
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        5
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        6
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        7
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        8
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        9
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        10
+                                    </a>
+                                </li>
+                            </ul>
+                            <button class="next"><span class="blind">10페이지 뒤로 이동</span></button>
+                            <button class="next_last"><span class="blind">1페이지 뒤로 이동</span></button>
+                        </div>
+                        <!-- //page_box -->
+
+                        <div class="com_btn st2">
+                            <a href="#">순서 저장</a>
+                            <a href="#">등록하기</a>
+                        </div>
+
+                    </div>
+                    <!-- //page_wrap -->
+
+                </section>
+                <!-- //section -->
+
+            </div>
+            <!-- //content -->
+
+        </main>
+        <!-- //main -->
+
+        <footer id="footer">
+            <div class="container">
+                <footer class="footer">
+                    <div class="footer_box">
+                        <div class="logo">
+                            <h1>
+                                MetaTrans
+                            </h1>
+                        </div>
+                        <!-- //logo -->
+                        <address>
+                            대표이사 : 박미진 | 사업자 등록번호 : 368-81-01113 | <br>
+                            주소 : 서울 서초구 서초대로 78길 36 지웰타워 6층 | 대표전화 02-6207-9090 | 문의 help@metatrans.ai <br>
+                            Copyright 2022 ⓒ MetaTrans. All rights reserved
+                        </address>
+                    </div>
+                    <!-- //footer_box -->
+
+                </footer>
+                <!-- //footer -->
+
+            </div>
+            <!-- //container -->
+
+        </footer>
+        <!-- //footer -->
+
+    </div>
+    <!-- //wrap -->
+
+</body>
+
+</html>
