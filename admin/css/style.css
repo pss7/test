@@ -46,7 +46,8 @@ label{vertical-align: middle; cursor: pointer;}
 
 .payment{overflow: visible;}
 .payment h1{margin:20px 0 10px; font-size: 20px;}
-.payment .payment_table_box{margin-bottom: 15px;}
+.payment .payment_table_box{margin-bottom: 15px; overflow-x: auto;}
+.payment .payment_table_box table{width: 2500px;}
 .payment .payment_table_box th{padding: 10px 0;}
 .payment .payment_table_box td{padding: 3px;}
 .payment .payment_table_box td input{padding: 3px 3px!important; font-size: 13px;}
@@ -133,7 +134,7 @@ label{vertical-align: middle; cursor: pointer;}
 .com_table_box{margin-bottom: 88px;}
 .com_table_box table{width: 100%;}
 .com_table_box .com_table tbody tr th{/*display: block;*/ margin: 0 -1px -1px 0; width
-: 220px; height: 65px; line-height: 63px; border: 1px solid #AEAEAE; background: #F6F6F6; font-size: 18px; font-weight: 500; color: #404040; white-space: nowrap;}
+: 220px; height: 65px; border: 1px solid #AEAEAE; background: #F6F6F6; font-size: 18px; font-weight: 500; color: #404040; white-space: nowrap;}
 .com_table_box .com_table tbody tr td{width: 1012px; padding: 8px 20px 8px 43px; border: 1px solid #AEAEAE;}
 .com_table_box .com_table tbody tr td{ font-weight: 500; color: #404040;}
 .com_table_box .com_table tbody tr td .info{margin-left: 25px; color: #404040; font-weight: 400;}
@@ -171,18 +172,18 @@ label{vertical-align: middle; cursor: pointer;}
 #section .tit span{font-size: 14px; color: #85B6FF;}
 
 /* 메인 배너 관리 */
-.period_box{display: flex; gap: 0 8px; align-items: center;}
-.period_box .period_select{padding-left: 19px; width: 129px; height: 49px; border: 1px solid #B1B1B1; font-weight: 500; color: #404040; cursor: pointer;  border-radius:0; 
+.com_table_box .com_table tbody tr td .period_box{display: flex; gap: 0 8px; align-items: center;}
+.com_table_box .com_table tbody tr td .period_box .period_select{padding-left: 19px; width: 129px; height: 49px; border: 1px solid #B1B1B1; font-weight: 500; color: #404040; cursor: pointer;  border-radius:0; 
 -webkit-appearance:none; -moz-appearance:none; appearance:none; background: url(../images/icon1.png)no-repeat 92px center;}
-.period_box .calendar_wrap{display: flex; gap: 0 25px; align-items: center;}
-.period_box .calendar_wrap .calendar_box{display: flex; align-items: center; gap: 0 8px;}
-.period_box .calendar_wrap input{padding-left: 19px; width: 104px; height: 49px; border: 1px solid #B1B1B1;}
-.period_box .calendar_wrap input::placeholder{color: #404040;;}
-.period_box .calendar_wrap .calendar_btn{width: 64px; height: 49px; border: 1px solid #B1B1B1; background-color: #404040; color: #fff; font-weight: 700;}
-.period_box .period_list{display: flex; gap: 0 5px;}
-.period_box .period_list a{display: flex; align-items: center; justify-content: center; width: 71px; height: 49px; font-weight: 700; color: #404040; }
-.period_box .period_list a.period_color1{background:#FFC000;}
-.period_box .period_list a.period_color2{background:#E2F0D9;}
+.com_table_box .com_table tbody tr td .period_box .calendar_wrap{display: flex; gap: 0 25px; align-items: center;}
+.com_table_box .com_table tbody tr td .period_box .calendar_wrap .calendar_box{display: flex; align-items: center; gap: 0 8px;}
+.com_table_box .com_table tbody tr td .period_box .calendar_wrap input{padding-left: 19px; width: 104px; height: 49px; border: 1px solid #B1B1B1;}
+.com_table_box .com_table tbody tr td .period_box .calendar_wrap input::placeholder{color: #404040;;}
+.com_table_box .com_table tbody tr td .period_box .calendar_wrap .calendar_btn{width: 64px; height: 49px; border: 1px solid #B1B1B1; background-color: #404040; color: #fff; font-weight: 700;}
+.com_table_box .com_table tbody tr td .period_box .period_list{display: flex; gap: 0 5px;}
+.com_table_box .com_table tbody tr td .period_box .period_list a{display: flex; align-items: center; justify-content: center; width: 71px; height: 49px; font-weight: 700; color: #404040; }
+.com_table_box .com_table tbody tr td .period_box .period_list a.period_color1{background:#FFC000;}
+.com_table_box .com_table tbody tr td .period_box .period_list a.period_color2{background:#E2F0D9;}
 #section.st1{width: 1420px; padding: 65px 0 0 17px;}
 #section.st1 h2{font-size: 30px;}
 .com_table_box.adm_banner_box{margin-bottom: 60px;}
@@ -196,49 +197,58 @@ label{vertical-align: middle; cursor: pointer;}
 .com_table_box.st .search_top .search_text em{color: #85B6FF;}
 .com_table_box.st .search_top .search_count{width: 116px; height: 49px; padding-left: 10px; font-weight: 500; border-radius:0; 
      -webkit-appearance:none; -moz-appearance:none; appearance:none; background: url(../images/icon1.png)no-repeat 79px center;  cursor: pointer;}
-.table_com_btn.st{display: flex; justify-content: center; align-items: center; width: 78px; height: 39px; margin: 0 auto; background: #404040; color: #fff; border: 1px solid #b1b1b1; font-weight: 700;} 
+.com_table_box .table_com_btn.st{display: flex; justify-content: center; align-items: center; width: 78px; height: 39px; margin: 0 auto; background: #404040; color: #fff; border: 1px solid #b1b1b1; font-weight: 700;} 
 
 /* 메인 배너 관리_등록 */
-.period_box.st2 .calendar_wrap{gap: 0 9px;}
-.period_box.st2 .calendar_wrap input[type="text"]{padding:0; width: 181px; text-align: center;}
-.com_file_box{margin-bottom: 8px; display: flex; gap: 0 9px;}
-.com_file_box input[type="file"] + label{display: flex; align-items: center; justify-content: center; width: 121px; height: 49px; font-weight: 700; color: #fff; background: #85B6FF;}
-.com_file_box p{font-size: 14px; color: #696969; font-weight: 400;}
-.com_file_text{display: flex; flex-direction: column;}
-.file_banner_box{position: relative; width: 290px; height: 169px; background: #f0f0f0;}
-.file_banner_box img{position: absolute; left: -100%; top: -100%; right: -100%; bottom: -100%; max-width: 100%; max-height: 100%; margin: auto;} 
+.com_table_box .com_table tbody tr td .period_box.st2 .calendar_wrap{gap: 0 9px;}
+.com_table_box .com_table tbody tr td .period_box.st2 .calendar_wrap input[type="text"]{padding:0; width: 181px; text-align: center;}
+.com_table_box .com_table tbody tr td .com_file_box{margin-bottom: 8px; display: flex; gap: 0 9px;}
+.com_table_box .com_table tbody tr td .com_file_box input[type="file"] + label{display: flex; align-items: center; justify-content: center; width: 121px; height: 49px; font-weight: 700; color: #fff; background: #85B6FF;}
+.com_table_box .com_table tbody tr td .com_file_box p{font-size: 14px; color: #696969; font-weight: 400;}
+.com_table_box .com_table tbody tr td .com_file_text{display: flex; flex-direction: column;}
+.com_table_box .com_table tbody tr td .file_banner_box{position: relative; width: 290px; height: 169px; background: #f0f0f0;}
+.com_table_box .com_table tbody tr td .file_banner_box img{position: absolute; left: -100%; top: -100%; right: -100%; bottom: -100%; max-width: 100%; max-height: 100%; margin: auto;} 
 
 /* 메인 배너 관리_상세 */
-.com_select_box select{padding-left: 13px; width: 385px; height: 49px; font-weight: 500; color: #404040; border: 1px solid #aeaeae; cursor: pointer;  border-radius:0; 
+.com_table_box .com_table tbody tr td .com_select_box select{padding-left: 13px; width: 385px; height: 49px; font-weight: 500; color: #404040; border: 1px solid #aeaeae; cursor: pointer;  border-radius:0; 
      -webkit-appearance:none; -moz-appearance:none; appearance:none; background: url(../images/icon2.png)no-repeat 354px center; } 
 
 /* FAQ_목록 */
 .com_table_box.st tbody tr td .text_box{width: 402px; margin: 0 auto; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;}
 
 /* FAQ_등록 */
-.com_select_box.st select{color: #AEAEAE;}
-.com_textarea_box textarea{padding: 14px 10px 10px 16px; width: 973px; height: 168px; border: 1px solid #B1B1B1; font-weight: 500; color: #aeaeae; text-align: left;}
+.com_table_box .com_table tbody tr td .com_select_box.st select{color: #AEAEAE;}
+.com_table_box .com_table tbody tr td .com_textarea_box textarea{padding: 14px 10px 10px 16px; width: 973px; height: 168px; border: 1px solid #B1B1B1; font-weight: 500; color: #aeaeae; text-align: left;}
 
 /* FAQ_상세 */
 .com_table_box .com_table tbody tr td.answer{padding: 24px 8px 143px 43px;}
 
 /* FAQ_수정 */
-.correction input[type="text"]{width: 100%;}
-.correction textarea,
-.correction select{color: #404040!important;}
-.correction input[type="text"]::placeholder{color: #404040;}
-.com_textarea_box.st textarea{color: #404040;}
+.com_table_box.correction input[type="text"]{width: 100%;}
+.com_table_box.correction textarea,
+.com_table_box.correction select{color: #404040!important;}
+.com_table_box.correction input[type="text"]::placeholder{color: #404040;}
+.com_table_box .com_table tbody tr td .com_textarea_box.st textarea{color: #404040;}
 
 /* 공지사항 등록 */
-.com_file_box.st{margin:0;}
-.com_file_box.st input[type="file"] + label{width: 88px; border-radius: 5px; font-weight: 500;}
-.com_file_box.st input[type="text"]{width: 261px; border-radius: 4px; background: #F8F8F8;}
-.com_file_box.st input[type="text"]::placeholder{color: #6B6B6B;  }
-.com_file_box.st .view{display: flex; align-items: center; justify-content: center; width: 80px; border-radius: 5px; font-weight: 500; color: #6B6B6B; border: 1px solid #AEAEAE;}
+.com_table_box .com_table tbody tr td .com_file_box.st{margin:0;}
+.com_table_box .com_table tbody tr td .com_file_box.st input[type="file"] + label{width: 88px; border-radius: 5px; font-weight: 500;}
+.com_table_box .com_table tbody tr td .com_file_box.st input[type="text"]{width: 261px; border-radius: 4px; background: #F8F8F8;}
+.com_table_box .com_table tbody tr td .com_file_box.st input[type="text"]::placeholder{color: #6B6B6B;  }
+.com_table_box .com_table tbody tr td .com_file_box.st .view{display: flex; align-items: center; justify-content: center; width: 80px; border-radius: 5px; font-weight: 500; color: #6B6B6B; border: 1px solid #AEAEAE;}
 
 /* 1:1 문의 상세 */
-.file_mark{display: inline-block; padding: 9px 45px 9px 18px; background: #F5F5F5; border-radius: 5px;}
+.com_table_box .com_table tbody tr td .file_mark{display: inline-block; padding: 9px 45px 9px 18px; background: #F5F5F5; border-radius: 5px;}
 
 /* 오류 신고 목록 */
-.com_chk_box input[type="checkbox"] + label{position: relative; display: block; margin: auto; width: 13px; height: 13px; border: 1px solid #404040;}
-.com_chk_box input[type="checkbox"]:checked + label::after{content: '\2713'; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 12px;}
+.com_table_box .com_table tbody tr td .com_chk_box input[type="checkbox"] + label{position: relative; display: block; margin: auto; width: 13px; height: 13px; border: 1px solid #404040;}
+.com_table_box .com_table tbody tr td .com_chk_box input[type="checkbox"]:checked + label::after{content: '\2713'; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 12px;}
+
+/* 오류 신고 답변 */
+.com_table_box.answer_write_box{padding-top: 45px; border-top: 1px solid #b1b1b1;}
+.com_table_box .com_table tbody tr td .info_btn{display: flex; justify-content: center; align-items: center; width: 147px; height: 49px; font-weight: 500; color: #fff; background: #85B6FF;}
+.com_table_box .com_table tbody tr td .info_box span{width:50px}
+.com_table_box .com_table tbody tr td .info_box{display: flex; gap: 0 103px; align-items: center;}
+.com_table_box .com_table tbody tr td .answer_write{position: relative; display: flex; align-items: center; width: 925px; height: 89px;} 
+.com_table_box .com_table tbody tr td .answer_write input{padding: 13px 170px 13px 13px; width: 100%; height: 100%; border: 1px solid #B1B1B1;}
+.com_table_box .com_table tbody tr td .answer_write label{position: absolute; top:0; bottom: 0; right:0; display: flex; align-items: center; justify-content: center; width: 147px; height: 89px; color: #fff; font-size: 20px; font-weight: 500; background: #85B6FF;}
