@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>운영관리_공지사항 상세</title>
+    <title>약관관리 등록</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/reset.css">
 
@@ -398,47 +398,50 @@
                 <section id="section" class="st1">
                     <div class="tit">
                         <h2>
-                            상세 보기
+                            등록하기
                         </h2>
                     </div>
                     <!-- //tit -->
 
                     <div class="com_table_box">
                         <table class="com_table">
-                            <caption class="blind">공지사항 상세보기</caption>
+                            <caption class="blind">약관관리 등록</caption>
                             <tbody>
                                 <tr>
                                     <th>
-                                        제목
+                                        <span title="필수 입력">*</span>약관버전
                                     </th>
                                     <td>
-                                        메타트랜스이 새롭게 바뀌었습니다.
+                                        <div class="com_text_box">
+                                            <input id="1" type="text" placeholder="약관 버전을 입력해주세요">
+                                            <label for="1" class="blind">질문입력</label>
+                                        </div>
                                     </td>
                                 </tr>
                                 <tr>
                                     <th>
-                                        내용
+                                        약관 종류
                                     </th>
                                     <td>
-                                        메타트랜스이 새롭게 바뀌었습니다. 기존보다 더욱 편리한 구조와 서비스로 돌아왔습니다.
-
-                                        많은 이용과 관심 부탁드립니다.
+                                        <div class="table_com_btn">
+                                            <a href="#" class="active">서비스 이용약관</a>
+                                            <a href="#">개인정보처리방침</a>
+                                            <a href="#">마케팅 이용약관</a>
+                                        </div>
                                     </td>
                                 </tr>
                                 <tr>
                                     <th>
-                                        등록일시
+                                        <span title="필수 입력">*</span>
+                                        약관 내용
                                     </th>
                                     <td>
-                                        2020-10-23
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        첨부파일
-                                    </th>
-                                    <td>
-                                        첨부파일
+                                        <div class="com_textarea_box">
+                                            <textarea id="text">
+내용을 입력해주세요.
+                                       </textarea>
+                                            <label for="text" class="blind">답변 입력</label>
+                                        </div>
                                     </td>
                                 </tr>
                             </tbody>
@@ -450,8 +453,7 @@
 
                     <div class="com_btn">
                         <a href="#">목록으로</a>
-                        <a href="#">수정하기</a>
-                        <a href="#">삭제하기</a>
+                        <a href="#">등록하기</a>
                     </div>
 
                 </section>

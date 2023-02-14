@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>운영관리_공지사항 상세</title>
+    <title>약관관리 목록</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/reset.css">
 
@@ -398,31 +398,30 @@
                 <section id="section" class="st1">
                     <div class="tit">
                         <h2>
-                            상세 보기
+                            약관 관리
                         </h2>
                     </div>
                     <!-- //tit -->
 
-                    <div class="com_table_box">
+                    <div class="com_table_box adm_banner_box">
                         <table class="com_table">
-                            <caption class="blind">공지사항 상세보기</caption>
+                            <caption class="blind">약관 관리</caption>
+                            <colgroup>
+                                <col width="250">
+                                <col width="1167">
+                            </colgroup>
                             <tbody>
                                 <tr>
                                     <th>
-                                        제목
+                                        약관 종류
                                     </th>
                                     <td>
-                                        메타트랜스이 새롭게 바뀌었습니다.
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        내용
-                                    </th>
-                                    <td>
-                                        메타트랜스이 새롭게 바뀌었습니다. 기존보다 더욱 편리한 구조와 서비스로 돌아왔습니다.
-
-                                        많은 이용과 관심 부탁드립니다.
+                                        <div class="table_com_btn">
+                                            <a href="#" class="active">전체</a>
+                                            <a href="#">서비스 이용약관</a>
+                                            <a href="#">개인정보처리방침</a>
+                                            <a href="#">마케팅 이용약관</a>
+                                        </div>
                                     </td>
                                 </tr>
                                 <tr>
@@ -430,15 +429,48 @@
                                         등록일시
                                     </th>
                                     <td>
-                                        2020-10-23
+                                        <div class="period_box">
+                                            <!-- //calendar_wrap -->
+                                            <div class="calendar_wrap">
+                                                <div class="calendar_box">
+                                                    <input id="1" type="text" placeholder="21.05.01" readonly>
+                                                    <label for="1" class="blind">달력</label>
+                                                    <button class="calendar_btn">달력</button>
+                                                </div>
+                                                ~
+                                                <div class="calendar_box">
+                                                    <input id="2" type="text" placeholder="21.05.01" readonly>
+                                                    <label for="2" class="blind">달력</label>
+                                                    <button class="calendar_btn">달력</button>
+                                                </div>
+                                            </div>
+                                            <!-- //calendar_wrap -->
+
+                                            <div class="period_list">
+                                                <a href="#" class="period_color1">어제</a>
+                                                <a href="#" class="period_color1">오늘</a>
+                                                <a href="#" class="period_color2">1개월</a>
+                                                <a href="#" class="period_color2">3개월</a>
+                                                <a href="#" class="period_color2">6개월</a>
+                                                <a href="#" class="period_color2">1년</a>
+                                            </div>
+                                            <!-- //period_list -->
+
+                                        </div>
+                                        <!-- //period_box -->
                                     </td>
                                 </tr>
                                 <tr>
                                     <th>
-                                        첨부파일
+                                        버전 검색
                                     </th>
-                                    <td>
-                                        첨부파일
+                                    <td class="search">
+                                        <div class="period_box">
+                                            <div class="com_input_box">
+                                                <input id="3" type="text" placeholder="검색어 입력">
+                                                <label for="3" class="blind">검색어 입력</label>
+                                            </div>
+                                        </div>
                                     </td>
                                 </tr>
                             </tbody>
@@ -448,11 +480,295 @@
                     </div>
                     <!-- //com_table_box -->
 
-                    <div class="com_btn">
-                        <a href="#">목록으로</a>
-                        <a href="#">수정하기</a>
-                        <a href="#">삭제하기</a>
+                    <div class="com_btn st">
+                        <a href="#" class="reset">초기화</a>
+                        <a href="#">검색</a>
                     </div>
+
+                    <div class="com_table_box st">
+                        <div class="search_top">
+                            <span class="search_text">총 <em>100</em>개</span>
+                            <select id="4" class="search_count">
+                                <option>20개</option>
+                            </select>
+                            <label for="4" class="blind">개수</label>
+                        </div>
+                        <!-- //search_top -->
+
+                        <table class="com_table">
+                            <caption class="blind">자주 묻는 질문</caption>
+                            <colgroup>
+                                <col width="5%">
+                                <col widht="5%">
+                                <col width="55%">
+                                <col width="15%">
+                                <col width="5%">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>No</th>
+                                    <th>약관 버전</th>
+                                    <th>약관 종류</th>
+                                    <th>등록일시</th>
+                                    <th>관리</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>100</td>
+                                    <td>
+                                        1.01
+                                    </td>
+                                    </td>
+                                    <td>
+                                        메타트랜스 서비스 이용약관
+                                    </td>
+                                    <td>
+                                        2020-10-23
+                                    </td>
+                                    <td>
+                                        <a href="#" class="table_com_btn st">
+                                            관리
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>99</td>
+                                    <td>
+                                        1.01
+                                    </td>
+                                    </td>
+                                    <td>
+                                        메타트랜스 서비스 이용약관
+                                    </td>
+                                    <td>
+                                        2020-10-23
+                                    </td>
+                                    <td>
+                                        <a href="#" class="table_com_btn st">
+                                            관리
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>98</td>
+                                    <td>
+                                        1.01
+                                    </td>
+                                    </td>
+                                    <td>
+                                        메타트랜스 서비스 이용약관
+                                    </td>
+                                    <td>
+                                        2020-10-23
+                                    </td>
+                                    <td>
+                                        <a href="#" class="table_com_btn st">
+                                            관리
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>97</td>
+                                    <td>
+                                        1.01
+                                    </td>
+                                    </td>
+                                    <td>
+                                        메타트랜스 서비스 이용약관
+                                    </td>
+                                    <td>
+                                        2020-10-23
+                                    </td>
+                                    <td>
+                                        <a href="#" class="table_com_btn st">
+                                            관리
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>96</td>
+                                    <td>
+                                        1.01
+                                    </td>
+                                    </td>
+                                    <td>
+                                        메타트랜스 서비스 이용약관
+                                    </td>
+                                    <td>
+                                        2020-10-23
+                                    </td>
+                                    <td>
+                                        <a href="#" class="table_com_btn st">
+                                            관리
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>95</td>
+                                    <td>
+                                        1.01
+                                    </td>
+                                    </td>
+                                    <td>
+                                        메타트랜스 서비스 이용약관
+                                    </td>
+                                    <td>
+                                        2020-10-23
+                                    </td>
+                                    <td>
+                                        <a href="#" class="table_com_btn st">
+                                            관리
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>94</td>
+                                    <td>
+                                        1.01
+                                    </td>
+                                    </td>
+                                    <td>
+                                        메타트랜스 서비스 이용약관
+                                    </td>
+                                    <td>
+                                        2020-10-23
+                                    </td>
+                                    <td>
+                                        <a href="#" class="table_com_btn st">
+                                            관리
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>93</td>
+                                    <td>
+                                        1.01
+                                    </td>
+                                    </td>
+                                    <td>
+                                        메타트랜스 서비스 이용약관
+                                    </td>
+                                    <td>
+                                        2020-10-23
+                                    </td>
+                                    <td>
+                                        <a href="#" class="table_com_btn st">
+                                            관리
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>92</td>
+                                    <td>
+                                        1.01
+                                    </td>
+                                    </td>
+                                    <td>
+                                        메타트랜스 서비스 이용약관
+                                    </td>
+                                    <td>
+                                        2020-10-23
+                                    </td>
+                                    <td>
+                                        <a href="#" class="table_com_btn st">
+                                            관리
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>91</td>
+                                    <td>
+                                        1.01
+                                    </td>
+                                    </td>
+                                    <td>
+                                        메타트랜스 서비스 이용약관
+                                    </td>
+                                    <td>
+                                        2020-10-23
+                                    </td>
+                                    <td>
+                                        <a href="#" class="table_com_btn st">
+                                            관리
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- //com_table -->
+
+                    </div>
+                    <!-- //com_table_box -->
+
+                    <div class="page_wrap">
+                        <span class="page_text"><em>1</em> of 84 pages</span>
+                        <div class="page_box">
+                            <button class="prev_first"><span class="blind">10페이지 앞으로 이동</span></button>
+                            <button class="prev"><span class="blind">1페이지 앞으로 이동</span></button>
+                            <ul class="page_list">
+                                <li>
+                                    <a href="#" class="active">
+                                        1
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        2
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        3
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        4
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        5
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        6
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        7
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        8
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        9
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        10
+                                    </a>
+                                </li>
+                            </ul>
+                            <button class="next"><span class="blind">10페이지 뒤로 이동</span></button>
+                            <button class="next_last"><span class="blind">1페이지 뒤로 이동</span></button>
+                        </div>
+                        <!-- //page_box -->
+
+                        <div class="com_btn st2">
+                            <a href="#">등록하기</a>
+                        </div>
+
+                    </div>
+                    <!-- //page_wrap -->
 
                 </section>
                 <!-- //section -->
