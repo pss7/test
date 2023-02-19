@@ -326,5 +326,47 @@ cursor: pointer;}
 .request .request_left .request_box .file_box{display: flex; gap: 0 12px;}
 .request .request_left .request_box .file_box input[type="text"]{width: 340px;}
 .request .request_left .request_box .file_box input[type="file"] + label{width: 108px; height: 52px; text-align: center; line-height: 50px; font-size: 15px; color: #000; border-radius: 4px; border: 1px solid #aeaeae; cursor: pointer;}
-
 .reques .border{margin-bottom: 30px; border: 1px solid #D9D9D9;}
+
+/* 결제 */
+.payment{position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);  padding: 27px 26px 22px 18px; width: 313px; height: 388px; border: 1px solid #cdcdcd; background: #fff;}
+.payment h1{color: #000; line-height: 19px; font-size: 16px; }
+.payment .payment_chk_wrap{margin-bottom: 52px;}
+.payment .payment_chk{margin-bottom: 16px;} 
+.payment .payment_chk:last-child{margin-bottom: 0;}
+.payment .payment_chk input[type="checkbox"] + label{padding-left: 13px;  display: flex; align-items: center; width: 269px; height: 44px; font-size: 14px; font-weight: 500; color: #000; cursor: pointer; border: 1px solid #d7d7d7; border-radius: 2px;}
+.payment .payment_chk input[type="checkbox"]:checked + label span::before{background: url(../images/payment_chk_on.png)no-repeat;}
+.payment .payment_chk input[type="checkbox"] + label span{ padding-left: 17px; position: relative;}
+.payment .payment_chk input[type="checkbox"] + label span::before{content: ''; padding: 13px 8px 0 0; position: absolute; top: 50%; left:0; transform: translateY(-50%); background: url(../images/payment_chk.png)no-repeat;}
+.payment_com_select{display: flex; gap:0 10px; justify-content: center;}
+.payment_com_select button{display: flex; justify-content: center; align-items: center; width: 132px; height: 44px; border: 1px solid #D7D7D7; border-radius: 2px;}
+
+/* 결제_팝업 */
+.payment_popup{display: none; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); padding: 35px 20px 27px; width: 313px;  border: 1px solid #cdcdcd; background: #fff;}
+.payment_popup span{display: block; margin-bottom: 13px; font-weight: 700; color: #000;}
+.payment_popup p{margin-bottom: 79px; font-size: 14px; font-weight: 400; }
+.payment_popup_st{display: none; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); padding: 96px 20px 27px; width: 313px;  border: 1px solid #cdcdcd; background: #fff;}
+.payment_popup_st .pop_close{position: absolute; left:0; right: 0; top:0;  margin-bottom: 37px; height: 58px; border-bottom: 1px solid #D9D9D9;}
+.payment_popup_st .pop_close .pop_close_btn{position: absolute; top: 50%; transform: translateY(-50%); right: 21px; background: url(../images/popup_close.png)no-repeat; padding: 16px 16px 0 0;}
+.payment_popup_st span{display: block; margin-bottom: 13px; font-weight: 700; color: #000;}
+.payment_popup_st p{margin-bottom: 79px; font-size: 14px; font-weight: 400; }
+.payment_popup_complete{display: none; padding: 58px 20px 22px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 313px;  border: 1px solid #cdcdcd; box-shadow: 0 4px 20px rgba(0,0,0,10%);}
+.payment_popup_complete span{display: block; margin-bottom: 52px; text-align: center;}
+.payment_popup_complete button{width: 100%; height: 44px; display: flex; align-items: center; justify-content: center; border: 1px solid #D7D7D7; border-radius: 2px; font-size: 14px; font-weight: 500;}
+
+/* 견적서 */
+.estimate_wrap{width:1200px; margin: 0 auto;}
+.estimate_wrap tr th,
+.estimate_wrap tr td{padding: 0 20px; height: 35px; border: 1px solid #ddd; text-align: center; font-size: 14px;}
+.estimate_wrap p{margin: 100px 0 30px; text-align: center; font-size: 20px; font-weight: 700;}
+.estimate_box_top{margin-bottom: 80px; display: flex; justify-content: space-between; align-items: flex-end;} 
+.estimate_box_top .reception dl{display: flex; gap: 0 5px; font-size: 18px;}
+.estimate_box_top .reception span{font-size: 18px;}
+.estimate_wrap h1{margin: 50px 0; font-size: 36px; color: #000; text-align: center; letter-spacing: 50px;}
+.estimate_wrap h2{margin: 50px 0 10px;}
+.estimate_table{ border: 2px solid #000;}
+.estimate_table tbody tr th{font-weight: 700;}
+.estimate_table2{width: 100%;}
+
+
+

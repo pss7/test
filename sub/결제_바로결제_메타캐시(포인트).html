@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>바로결제- 메타캐시(포인트)</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+
+    <script src="js/jquery-1.12.2.min.js"></script>
+</head>
+
+<body>
+
+    <div id="wrap">
+        <div class="payment">
+            <h1>
+                결제수단
+            </h1>
+
+            <div class="payment_chk_wrap">
+                <div class="payment_chk">
+                    <input id="chk1" type="checkbox" class="blind">
+                    <label for="chk1"><span>메타캐시(포인트)</span></label>
+                </div>
+                <!-- //payment_chk -->
+
+                <div class="payment_chk">
+                    <input id="chk2" type="checkbox" class="blind">
+                    <label for="chk2"><span>계좌이체</span></label>
+                </div>
+                <!-- //payment_chk -->
+
+                <div class="payment_chk">
+                    <input id="chk3" type="checkbox" class="blind">
+                    <label for="chk3"><span>무통장입금</span></label>
+                </div>
+                <!-- //payment_chk -->
+
+                <div class="payment_chk">
+                    <input id="chk4" type="checkbox" class="blind">
+                    <label for="chk4"><span>카드결제</span></label>
+                </div>
+                <!-- //payment_chk -->
+
+            </div>
+            <!-- //payment_chk_wrap -->
+
+            <div class="payment_com_select">
+                <button>취소</button>
+                <button>선택완료</button>
+            </div>
+            <!-- //payment_select -->
+
+        </div>
+        <!-- //payment -->
+
+    </div>
+    <!-- //wrap -->
+
+    <!-- 바로결제 팝업 -->
+    <div class="payment_popup">
+        <span>
+            메타캐시(포인트) 사용
+        </span>
+        <p>
+            4개의 번역기를 이용하여 <br>
+            4,900 포인트를 사용하시겠습니까?
+        </p>
+        <div class="payment_com_select">
+            <button>취소</button>
+            <button>사용</button>
+        </div>
+        <!-- //payment_select -->
+
+    </div>
+    <!-- //payment_popup -->
+
+    <!-- 메타캐시가 없는 경우 팝업 -->
+    <div class="payment_popup_st">
+        <div class="pop_close">
+            <button class="pop_close_btn"><span class="blind">팝업닫기</span></button>
+        </div>
+        <!-- //pop_close -->
+
+        <span>
+            포인트가 부족합니다
+        </span>
+        <p>
+            포인트를 충전해주세요
+        </p>
+        <div class="payment_com_select">
+            <button>취소</button>
+            <button>포인트 충전</button>
+        </div>
+        <!-- //payment_select -->
+
+    </div>
+    <!-- //payment_popup -->
+
+    <!-- 결제 완료 팝업 -->
+    <div class="payment_popup_complete">
+        <span>이용권을 구매하셨습니다.</span>
+        <button>확인</button>
+    </div>
+    <!-- //payment_popup_complete -->
+
+
+
+</body>
+
+</html>
