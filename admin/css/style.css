@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-#wrap{height: 100%;}
+#wrap{padding: 0 0 50px;}
 .login main{padding: 295px 0 263px;}
 main{padding: 10px 0 300px;}
 main .content{display: flex;}
@@ -29,6 +29,9 @@ label{vertical-align: middle; cursor: pointer;}
 .admin_box .text span{color: #000; font-weight: 500;}
 
 .admin_table_box{margin-bottom: 10px; overflow-x: auto;}
+.admin_table_box::-webkit-scrollbar {height: 7px; }
+.admin_table_box::-webkit-scrollbar-thumb {border-radius: 50px; background-color: #aaa;}
+.admin_table_box::-webkit-scrollbar-track {margin: 5px 0; background-color: #eee; border-radius: 50px;}
 .admin_table_box table .img_box{text-align: center;}
 .admin_table_box table .img_box .img{position: relative; margin: 0 auto; width: 86px; height: 77px; background: #f0f0f0; border: 1px solid #ddd;}
 .admin_table_box table .img_box .img img{display: block; position: absolute; left: -100%; top: -100%; right:-100%; bottom: -100%; margin: auto; max-width: 100%; max-height: 100%; }
@@ -46,9 +49,12 @@ label{vertical-align: middle; cursor: pointer;}
 
 .payment{overflow: visible;}
 .payment h1{margin:20px 0 10px; font-size: 20px;}
-.payment .payment_table_box{margin-bottom: 15px; overflow-x: auto;}
+.payment .payment_table_box{margin: 20px 0; overflow-x: auto;}
+.payment .payment_table_box::-webkit-scrollbar {height: 7px; }
+.payment .payment_table_box::-webkit-scrollbar-thumb {border-radius: 50px; background-color: #aaa;}
+.payment .payment_table_box::-webkit-scrollbar-track {margin: 5px 0; background-color: #eee; border-radius: 50px;}
 .payment .payment_table_box table{width: 2500px;}
-.payment .payment_table_box th{padding: 10px 0;}
+.payment .payment_table_box th{padding: 3px 0;}
 .payment .payment_table_box td{padding: 3px;}
 .payment .payment_table_box td input{padding: 3px 3px!important; font-size: 13px;}
 .payment .payment_table_box td input.st1{width: 100px;}
@@ -116,12 +122,18 @@ label{vertical-align: middle; cursor: pointer;}
 .table_com_btn a.active{background: #85B6FF; color: #fff;}
 .table_com_btn a:hover{background: #85B6FF; color: #fff;}
 
+.payment_tab{display: flex; align-items: center; margin: 30px 0;}
+.payment_tab li{margin-right: -1px;}
+.payment_tab li a.active{background: #3e3b3b;}
+.payment_tab li a{display: block; padding: 2px 23px; font-size: 14px; color: #333; font-weight: 500; border: 1px solid #f0f0f0; background: #a39e9e; color: #fff;}
+
 #aside{width: 325px; padding: 0 10px;}
 #aside .list1 > li{margin: 0 0 10px; width: 300px; min-height: 80px; line-height: 80px; }
 #aside .list1 > li > a{display: block; padding-left: 21px; transition: all .3s;}
 #aside .list1 > li > a:hover{background: #85B6FF;}
 #aside .list1 > li > a:hover span{color: #fff;}
 #aside .list1 > li > a.active{background: #85B6FF;}
+#aside .list1 > li > a.active + .list2{display: block;}
 #aside .list1 > li > a.active span{color: #fff;}
 #aside .list1 > li > a span{position: relative; padding-left: 58px; font-size: 22px; font-weight: 500; color: #404040;}
 #aside .list2{display: none;}

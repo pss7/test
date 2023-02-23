@@ -103,7 +103,7 @@ font-size: 15px; font-weight: 500; color: #000;}
 #article .com_box2.work .btn_list_box ul{top: 46px;}
 #article .com_box2 .input_check_wrap{display: flex; gap: 12px 14px; flex-wrap: wrap;}
 #article .com_box2 .input_check_box{display: flex; gap: 0 14px; align-items: center;}
-#article .com_box2 .input_check_box label{position: relative; padding-left:23px; font-size: 12px; font-weight: 700; color: #000;
+#article .com_box2 .input_check_box label{position: relative; padding-left:23px; font-size: 16px; font-weight: 700; color: #000;
 cursor: pointer;}
 #article .com_box2 .input_check_box label::before{content: ''; position: absolute; top: 50%; left:0; transform: translateY(-50%);
     background: url(../images/checkbox_off.png) no-repeat; padding: 14px 15px 0 0; background-size: auto 100%!important;} 
