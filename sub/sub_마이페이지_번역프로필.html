@@ -166,7 +166,8 @@
                                 <h4>
                                     번역가 활동
                                 </h4>
-                                <span>승인완료</span>
+                                <span class="complete">승인완료</span>
+                                <!-- 거절 > refuse / 대기 > atmosphere -->
                             </div>
                             <ul class="aside_my_list">
                                 <li>
@@ -194,521 +195,525 @@
                     <!-- //aside -->
 
                     <article id="article">
-                        <div class="com_box2">
-                            <div class="tit_box">
+                        <div class="my_profile">
+                            <div class="com_box2">
+                                <div class="tit_box">
+                                    <h3>
+                                        번역가 유형
+                                    </h3>
+                                    <span>
+                                        복수 선택가능
+                                    </span>
+                                </div>
+                                <!-- //tit_box -->
+                                <div class="select_btn_box">
+                                    <button class="select_btn active">
+                                        <span>초벌 번역 감수</span>
+                                        <em>
+                                            AI활용 초벌 번역 가능자
+                                        </em>
+                                    </button>
+                                    <button class="select_btn">
+                                        <span>전문 번역사 신청</span>
+                                        <em>
+                                            전문번역 감수 가능자
+                                        </em>
+                                    </button>
+                                </div>
+                                <!-- //select_btn_box -->
+                                <p>
+                                    초벌 번역가, 투잡을 원하는 직장인, 유학경험자
+                                </p>
+
+                            </div>
+                            <!-- //com_box2 -->
+
+                            <div class="com_box2">
+
+                                <div class="fx_box">
+                                    <div class="select_box">
+                                        <h3>
+                                            번역 출발어
+                                        </h3>
+                                        <div class="btn_list_box">
+                                            <a href="#">
+                                                한국어
+                                            </a>
+                                            <ul>
+                                                <li><a href="#">영어</a></li>
+                                            </ul>
+                                        </div>
+                                        <!-- //btn_list_box -->
+
+                                    </div>
+                                    <!-- //select_box -->
+
+                                    <div class="select_box">
+                                        <h3>
+                                            번역 도착어
+                                        </h3>
+                                        <div class="btn_list_box">
+                                            <a href="#">
+                                                영어
+                                            </a>
+                                            <ul>
+                                                <li><a href="#">한국어</a></li>
+                                            </ul>
+                                        </div>
+                                        <!-- //btn_list_box -->
+
+                                    </div>
+                                    <!-- //select_box -->
+
+                                </div>
+                                <!-- //fx_box-->
+
+                                <div class="add_wrap">
+
+                                    <div class="add_box">
+                                        영어->한국어
+                                        <button class="add_close">
+                                            <span class="blind">삭제</span>
+                                        </button>
+                                    </div>
+                                    <!-- //add_box -->
+
+                                    <div class="add_box">
+                                        한국어-> 영어
+                                        <button class="add_close">
+                                            <span class="blind">삭제</span>
+                                        </button>
+                                    </div>
+                                    <!-- //add_box -->
+
+                                    <button class="add_btn2">
+                                        + 언어 추가
+                                    </button>
+                                    <!-- //add_btn2 -->
+
+                                </div>
+                                <!-- //add_wrap -->
+
+                            </div>
+                            <!-- //com_box2 -->
+
+                            <div class="border"></div>
+
+                            <div class="com_box2 work">
                                 <h3>
-                                    번역가 유형
+                                    번역업부 관련 정보
                                 </h3>
-                                <span>
-                                    복수 선택가능
-                                </span>
-                            </div>
-                            <!-- //tit_box -->
-                            <div class="select_btn_box">
-                                <button class="select_btn active">
-                                    <span>초벌 번역 감수</span>
-                                    <em>
-                                        AI활용 초벌 번역 가능자
-                                    </em>
-                                </button>
-                                <button class="select_btn">
-                                    <span>전문 번역사 신청</span>
-                                    <em>
-                                        전문번역 감수 가능자
-                                    </em>
-                                </button>
-                            </div>
-                            <!-- //select_btn_box -->
-                            <p>
-                                초벌 번역가, 투잡을 원하는 직장인, 유학경험자
-                            </p>
+                                <div class="fx_box">
+                                    <div class="select_box">
+                                        <div class="btn_list_box">
+                                            <a href="#">
+                                                번역가능시간
+                                            </a>
+                                            <ul>
+                                                <li><a href="#">종일</a></li>
+                                                <li><a href="#">오전</a></li>
+                                                <li><a href="#">오후</a></li>
+                                                <li><a href="#">업무외시간</a></li>
+                                                <li><a href="#">추후통보</a></li>
+                                            </ul>
+                                        </div>
+                                        <!-- //btn_list_box -->
 
-                        </div>
-                        <!-- //com_box2 -->
-
-                        <div class="com_box2">
-
-                            <div class="fx_box">
-                                <div class="select_box">
-                                    <h3>
-                                        번역 출발어
-                                    </h3>
-                                    <div class="btn_list_box">
-                                        <a href="#">
-                                            한국어
-                                        </a>
-                                        <ul>
-                                            <li><a href="#">영어</a></li>
-                                        </ul>
                                     </div>
-                                    <!-- //btn_list_box -->
+                                    <!-- //select_box -->
 
-                                </div>
-                                <!-- //select_box -->
+                                    <div class="select_box">
+                                        <div class="btn_list_box">
+                                            <a href="#">
+                                                번여경력
+                                            </a>
+                                            <ul>
+                                                <li><a href="#">신입</a></li>
+                                                <li><a href="#">3년 이하</a></li>
+                                                <li><a href="#">4년 이상</a></li>
+                                                <li><a href="#">10년 이상</a></li>
+                                            </ul>
+                                        </div>
+                                        <!-- //btn_list_box -->
 
-                                <div class="select_box">
-                                    <h3>
-                                        번역 도착어
-                                    </h3>
-                                    <div class="btn_list_box">
-                                        <a href="#">
-                                            영어
-                                        </a>
-                                        <ul>
-                                            <li><a href="#">한국어</a></li>
-                                        </ul>
                                     </div>
-                                    <!-- //btn_list_box -->
+                                    <!-- //select_box -->
+
+                                    <div class="select_box">
+                                        <div class="btn_list_box">
+                                            <a href="#">
+                                                직업
+                                            </a>
+                                            <ul>
+                                                <li><a href="#">학생</a></li>
+                                                <li><a href="#">취준생</a></li>
+                                                <li><a href="#">전문번역사</a></li>
+                                                <li><a href="#">번역프리랜서</a></li>
+                                                <li><a href="#">직장인</a></li>
+                                            </ul>
+                                        </div>
+                                        <!-- //btn_list_box -->
+
+                                    </div>
+                                    <!-- //select_box -->
+
+                                    <div class="select_box">
+                                        <div class="btn_list_box">
+                                            <a href="#">
+                                                번역직업 목표
+                                            </a>
+                                            <ul>
+                                                <ul>
+                                                    <li><a href="#">전문 번역 프리랜서 </a></li>
+                                                    <li><a href="#">영어공부</a></li>
+                                                    <li><a href="#">추가 부수입</a></li>
+                                                </ul>
+                                            </ul>
+                                        </div>
+                                        <!-- //btn_list_box -->
+
+                                    </div>
+                                    <!-- //select_box -->
 
                                 </div>
-                                <!-- //select_box -->
+                                <!-- //fx_box-->
+
+                                <div class="fx_box">
+                                    <div class="select_box">
+                                        <div class="btn_list_box">
+                                            <a href="#">
+                                                언어 자격증
+                                            </a>
+                                            <ul>
+                                                <li><a href="#">토익</a></li>
+                                                <li><a href="#">토플</a></li>
+                                                <li><a href="#">IELTS</a></li>
+                                                <li><a href="#">ITT 통번역 자격증</a></li>
+                                                <li><a href="#">통번역대학원</a></li>
+                                                <li><a href="#">해외 경험있음</a></li>
+                                                <li><a href="#">없음</a></li>
+                                            </ul>
+                                        </div>
+                                        <!-- //btn_list_box -->
+
+                                    </div>
+                                    <!-- //select_box -->
+
+                                    <div class="select_box">
+                                        <div class="btn_list_box">
+                                            <a href="#">
+                                                번역경력
+                                            </a>
+                                            <ul>
+                                                <li><a href="#">신입</a></li>
+                                                <li><a href="#">3년 이하</a></li>
+                                                <li><a href="#">4년 이상</a></li>
+                                                <li><a href="#">10년 이상</a></li>
+                                            </ul>
+                                        </div>
+                                        <!-- //btn_list_box -->
+
+                                    </div>
+                                    <!-- //select_box -->
+
+                                    <div class="select_box">
+                                        <div class="btn_list_box">
+                                            <a href="#">
+                                                MT경험
+                                            </a>
+                                            <ul>
+                                                <li><a href="#">없슴</a></li>
+                                                <li><a href="#">예</a></li>
+                                                <li><a href="#">전혀모름</a></li>
+                                            </ul>
+                                        </div>
+                                        <!-- //btn_list_box -->
+
+                                    </div>
+                                    <!-- //select_box -->
+
+                                    <div class="select_box">
+                                        <div class="btn_list_box">
+                                            <a href="#">
+                                                통화가능시간
+                                            </a>
+                                            <ul>
+                                                <li><a href="#">무관</a></li>
+                                                <li><a href="#">시간정해서</a></li>
+                                                <li><a href="#">저녁혹은 주말만</a></li>
+                                            </ul>
+                                        </div>
+                                        <!-- //btn_list_box -->
+
+                                    </div>
+                                    <!-- //select_box -->
+
+                                </div>
+                                <!-- //fx_box-->
 
                             </div>
-                            <!-- //fx_box-->
+                            <!-- //com_box2 -->
 
-                            <div class="add_wrap">
-
-                                <div class="add_box">
-                                    영어->한국어
-                                    <button class="add_close">
-                                        <span class="blind">삭제</span>
-                                    </button>
+                            <div class="com_box2">
+                                <div class="tit_box">
+                                    <h3>
+                                        업무 유형
+                                    </h3>
+                                    <span>
+                                        복수 선택가능
+                                    </span>
                                 </div>
-                                <!-- //add_box -->
+                                <!-- //tit_box -->
 
-                                <div class="add_box">
-                                    한국어-> 영어
-                                    <button class="add_close">
-                                        <span class="blind">삭제</span>
-                                    </button>
+                                <div class="input_check_wrap">
+                                    <div class="input_check_box">
+                                        <input id="chk01" type="checkbox" class="blind">
+                                        <label for="chk01">문서</label>
+                                    </div>
+                                    <div class="input_check_box">
+                                        <input id="chk02" type="checkbox" class="blind">
+                                        <label for="chk02">STT(AI속기사)</label>
+                                    </div>
+                                    <div class="input_check_box">
+                                        <input id="chk03" type="checkbox" class="blind">
+                                        <label for="chk03">TTS(AI아나운서)</label>
+                                    </div>
+                                    <div class="input_check_box">
+                                        <input id="chk04" type="checkbox" class="blind">
+                                        <label for="chk04">영상</label>
+                                    </div>
+                                    <div class="input_check_box">
+                                        <input id="chk05" type="checkbox" class="blind">
+                                        <label for="chk05">유튜브</label>
+                                    </div>
+                                    <div class="input_check_box">
+                                        <input id="chk07" type="checkbox" class="blind">
+                                        <label for="chk07">동시통역</label>
+                                    </div>
+                                    <!-- //input_check_wrap -->
+
                                 </div>
-                                <!-- //add_box -->
+                                <!-- //input_check_wrap-->
+
+                            </div>
+                            <!-- //com_box2 -->
+
+                            <div class="com_box2 education">
+                                <h3>
+                                    학력 및 전공
+                                    <span title="필수입력" class="essential">
+                                        *
+                                    </span>
+                                </h3>
+
+                                <div class="fx_box">
+                                    <input id="school" type="text" placeholder="학교">
+                                    <label for="school" class="blind">학교</label>
+
+                                    <input id="major" type="text" placeholder="전공">
+                                    <label for="major" class="blind">전공</label>
+
+                                    <div class="select_box">
+                                        <div class="btn_list_box">
+                                            <a href="#">
+                                                학교구분
+                                            </a>
+                                            <ul>
+                                                <li><a href="#">종일</a></li>
+                                                <li><a href="#">오전</a></li>
+                                                <li><a href="#">오후</a></li>
+                                                <li><a href="#">업무외시간</a></li>
+                                                <li><a href="#">추후통보</a></li>
+                                            </ul>
+                                        </div>
+                                        <!-- //btn_list_box -->
+
+                                    </div>
+
+                                    <div class="select_box">
+                                        <div class="btn_list_box">
+                                            <a href="#" class="graduated">
+                                                졸업상태
+                                            </a>
+                                            <ul>
+                                                <li><a href="#">종일</a></li>
+                                                <li><a href="#">오전</a></li>
+                                                <li><a href="#">오후</a></li>
+                                                <li><a href="#">업무외시간</a></li>
+                                                <li><a href="#">추후통보</a></li>
+                                            </ul>
+                                        </div>
+                                        <!-- //btn_list_box -->
+
+                                    </div>
+
+                                </div>
 
                                 <button class="add_btn2">
-                                    + 언어 추가
+                                    + 학력 추가
                                 </button>
-                                <!-- //add_btn2 -->
+
+                                <div class="add_wrap">
+
+                                    <div class="add_box">
+                                        서울대학교
+                                    </div>
+                                    <!-- //add_box -->
+
+                                    <div class="add_box">
+                                        경제학과
+                                    </div>
+                                    <!-- //add_box -->
+
+                                    <div class="add_box">
+                                        대학교
+                                    </div>
+                                    <!-- //add_box -->
+
+                                    <div class="add_box">
+                                        재학중
+                                    </div>
+                                    <!-- //add_box -->
+
+                                    <button class="add_close">
+                                        <span class="blind">삭제</span>
+                                    </button>
+
+                                </div>
+                                <!-- //add_wrap -->
 
                             </div>
-                            <!-- //add_wrap -->
+                            <!-- //com_box2 -->
 
-                        </div>
-                        <!-- //com_box2 -->
-
-                        <div class="border"></div>
-
-                        <div class="com_box2 work">
-                            <h3>
-                                번역업부 관련 정보
-                            </h3>
-                            <div class="fx_box">
-                                <div class="select_box">
-                                    <div class="btn_list_box">
-                                        <a href="#">
-                                            번역가능시간
-                                        </a>
-                                        <ul>
-                                            <li><a href="#">종일</a></li>
-                                            <li><a href="#">오전</a></li>
-                                            <li><a href="#">오후</a></li>
-                                            <li><a href="#">업무외시간</a></li>
-                                            <li><a href="#">추후통보</a></li>
-                                        </ul>
+                            <div class="com_box2 field">
+                                <div class="tit_box">
+                                    <h3>
+                                        자신있는 분야
+                                    </h3>
+                                    <span>
+                                        복수 선택가능
+                                    </span>
+                                </div>
+                                <div class="input_check_wrap">
+                                    <div class="input_check_box">
+                                        <input id="chk08" type="checkbox" class="blind">
+                                        <label for="chk08">재무/회계</label>
                                     </div>
-                                    <!-- //btn_list_box -->
-
-                                </div>
-                                <!-- //select_box -->
-
-                                <div class="select_box">
-                                    <div class="btn_list_box">
-                                        <a href="#">
-                                            번여경력
-                                        </a>
-                                        <ul>
-                                            <li><a href="#">신입</a></li>
-                                            <li><a href="#">3년 이하</a></li>
-                                            <li><a href="#">4년 이상</a></li>
-                                            <li><a href="#">10년 이상</a></li>
-                                        </ul>
+                                    <div class="input_check_box">
+                                        <input id="chk09" type="checkbox" class="blind">
+                                        <label for="chk09">산업/기술</label>
                                     </div>
-                                    <!-- //btn_list_box -->
-
-                                </div>
-                                <!-- //select_box -->
-
-                                <div class="select_box">
-                                    <div class="btn_list_box">
-                                        <a href="#">
-                                            직업
-                                        </a>
-                                        <ul>
-                                            <li><a href="#">학생</a></li>
-                                            <li><a href="#">취준생</a></li>
-                                            <li><a href="#">전문번역사</a></li>
-                                            <li><a href="#">번역프리랜서</a></li>
-                                            <li><a href="#">직장인</a></li>
-                                        </ul>
+                                    <div class="input_check_box">
+                                        <input id="chk10" type="checkbox" class="blind">
+                                        <label for="chk10">비즈니스</label>
                                     </div>
-                                    <!-- //btn_list_box -->
-
-                                </div>
-                                <!-- //select_box -->
-
-                                <div class="select_box">
-                                    <div class="btn_list_box">
-                                        <a href="#">
-                                            번역직업 목표
-                                        </a>
-                                        <ul>
-                                            <ul>
-                                                <li><a href="#">전문 번역 프리랜서 </a></li>
-                                                <li><a href="#">영어공부</a></li>
-                                                <li><a href="#">추가 부수입</a></li>
-                                            </ul>
-                                        </ul>
+                                    <div class="input_check_box">
+                                        <input id="chk11" type="checkbox" class="blind">
+                                        <label for="chk11">의학/과학</label>
                                     </div>
-                                    <!-- //btn_list_box -->
-
-                                </div>
-                                <!-- //select_box -->
-
-                            </div>
-                            <!-- //fx_box-->
-
-                            <div class="fx_box">
-                                <div class="select_box">
-                                    <div class="btn_list_box">
-                                        <a href="#">
-                                            언어 자격증
-                                        </a>
-                                        <ul>
-                                            <li><a href="#">토익</a></li>
-                                            <li><a href="#">토플</a></li>
-                                            <li><a href="#">IELTS</a></li>
-                                            <li><a href="#">ITT 통번역 자격증</a></li>
-                                            <li><a href="#">통번역대학원</a></li>
-                                            <li><a href="#">해외 경험있음</a></li>
-                                            <li><a href="#">없음</a></li>
-                                        </ul>
+                                    <div class="input_check_box">
+                                        <input id="chk12" type="checkbox" class="blind">
+                                        <label for="chk12">인문/사회</label>
                                     </div>
-                                    <!-- //btn_list_box -->
-
-                                </div>
-                                <!-- //select_box -->
-
-                                <div class="select_box">
-                                    <div class="btn_list_box">
-                                        <a href="#">
-                                            번역경력
-                                        </a>
-                                        <ul>
-                                            <li><a href="#">신입</a></li>
-                                            <li><a href="#">3년 이하</a></li>
-                                            <li><a href="#">4년 이상</a></li>
-                                            <li><a href="#">10년 이상</a></li>
-                                        </ul>
+                                    <div class="input_check_box">
+                                        <input id="chk13" type="checkbox" class="blind">
+                                        <label for="chk13">커리어</label>
                                     </div>
-                                    <!-- //btn_list_box -->
-
-                                </div>
-                                <!-- //select_box -->
-
-                                <div class="select_box">
-                                    <div class="btn_list_box">
-                                        <a href="#">
-                                            MT경험
-                                        </a>
-                                        <ul>
-                                            <li><a href="#">없슴</a></li>
-                                            <li><a href="#">예</a></li>
-                                            <li><a href="#">전혀모름</a></li>
-                                        </ul>
+                                    <div class="input_check_box">
+                                        <input id="chk14" type="checkbox" class="blind">
+                                        <label for="chk14">IT/컴퓨터</label>
                                     </div>
-                                    <!-- //btn_list_box -->
-
-                                </div>
-                                <!-- //select_box -->
-
-                                <div class="select_box">
-                                    <div class="btn_list_box">
-                                        <a href="#">
-                                            통화가능시간
-                                        </a>
-                                        <ul>
-                                            <li><a href="#">무관</a></li>
-                                            <li><a href="#">시간정해서</a></li>
-                                            <li><a href="#">저녁혹은 주말만</a></li>
-                                        </ul>
+                                    <div class="input_check_box">
+                                        <input id="chk14" type="checkbox" class="blind">
+                                        <label for="chk14">컨텐츠</label>
                                     </div>
-                                    <!-- //btn_list_box -->
+                                    <div class="input_check_box">
+                                        <input id="chk14" type="checkbox" class="blind">
+                                        <label for="chk14">영역무관</label>
+                                    </div>
+                                    <!-- //input_check_wrap -->
 
-                                </div>
-                                <!-- //select_box -->
-
-                            </div>
-                            <!-- //fx_box-->
-
-                        </div>
-                        <!-- //com_box2 -->
-
-                        <div class="com_box2">
-                            <div class="tit_box">
-                                <h3>
-                                    업무 유형
-                                </h3>
-                                <span>
-                                    복수 선택가능
-                                </span>
-                            </div>
-                            <!-- //tit_box -->
-
-                            <div class="input_check_wrap">
-                                <div class="input_check_box">
-                                    <input id="chk01" type="checkbox" class="blind">
-                                    <label for="chk01">문서</label>
-                                </div>
-                                <div class="input_check_box">
-                                    <input id="chk02" type="checkbox" class="blind">
-                                    <label for="chk02">STT(AI속기사)</label>
-                                </div>
-                                <div class="input_check_box">
-                                    <input id="chk03" type="checkbox" class="blind">
-                                    <label for="chk03">TTS(AI아나운서)</label>
-                                </div>
-                                <div class="input_check_box">
-                                    <input id="chk04" type="checkbox" class="blind">
-                                    <label for="chk04">영상</label>
-                                </div>
-                                <div class="input_check_box">
-                                    <input id="chk05" type="checkbox" class="blind">
-                                    <label for="chk05">유튜브</label>
-                                </div>
-                                <div class="input_check_box">
-                                    <input id="chk07" type="checkbox" class="blind">
-                                    <label for="chk07">동시통역</label>
                                 </div>
                                 <!-- //input_check_wrap -->
 
                             </div>
-                            <!-- //input_check_wrap-->
+                            <!-- //com_box2 -->
 
-                        </div>
-                        <!-- //com_box2 -->
-
-                        <div class="com_box2 education">
-                            <h3>
-                                학력 및 전공
-                                <span title="필수입력" class="essential">
-                                    *
-                                </span>
-                            </h3>
-
-                            <div class="fx_box">
-                                <input id="school" type="text" placeholder="학교">
-                                <label for="school" class="blind">학교</label>
-
-                                <input id="major" type="text" placeholder="전공">
-                                <label for="major" class="blind">전공</label>
-
-                                <div class="select_box">
-                                    <div class="btn_list_box">
-                                        <a href="#">
-                                            학교구분
-                                        </a>
-                                        <ul>
-                                            <li><a href="#">종일</a></li>
-                                            <li><a href="#">오전</a></li>
-                                            <li><a href="#">오후</a></li>
-                                            <li><a href="#">업무외시간</a></li>
-                                            <li><a href="#">추후통보</a></li>
-                                        </ul>
-                                    </div>
-                                    <!-- //btn_list_box -->
-
-                                </div>
-
-                                <div class="select_box">
-                                    <div class="btn_list_box">
-                                        <a href="#" class="graduated">
-                                            졸업상태
-                                        </a>
-                                        <ul>
-                                            <li><a href="#">종일</a></li>
-                                            <li><a href="#">오전</a></li>
-                                            <li><a href="#">오후</a></li>
-                                            <li><a href="#">업무외시간</a></li>
-                                            <li><a href="#">추후통보</a></li>
-                                        </ul>
-                                    </div>
-                                    <!-- //btn_list_box -->
-
-                                </div>
-
-                            </div>
-
-                            <button class="add_btn2">
-                                + 학력 추가
-                            </button>
-
-                            <div class="add_wrap">
-
-                                <div class="add_box">
-                                    서울대학교
-                                </div>
-                                <!-- //add_box -->
-
-                                <div class="add_box">
-                                    경제학과
-                                </div>
-                                <!-- //add_box -->
-
-                                <div class="add_box">
-                                    대학교
-                                </div>
-                                <!-- //add_box -->
-
-                                <div class="add_box">
-                                    재학중
-                                </div>
-                                <!-- //add_box -->
-
-                                <button class="add_close">
-                                    <span class="blind">삭제</span>
-                                </button>
-
-                            </div>
-                            <!-- //add_wrap -->
-
-                        </div>
-                        <!-- //com_box2 -->
-
-                        <div class="com_box2 field">
-                            <div class="tit_box">
+                            <div class="com_box2">
                                 <h3>
-                                    자신있는 분야
+                                    자기소개
                                 </h3>
-                                <span>
-                                    복수 선택가능
-                                </span>
-                            </div>
-                            <div class="input_check_wrap">
-                                <div class="input_check_box">
-                                    <input id="chk08" type="checkbox" class="blind">
-                                    <label for="chk08">재무/회계</label>
-                                </div>
-                                <div class="input_check_box">
-                                    <input id="chk09" type="checkbox" class="blind">
-                                    <label for="chk09">산업/기술</label>
-                                </div>
-                                <div class="input_check_box">
-                                    <input id="chk10" type="checkbox" class="blind">
-                                    <label for="chk10">비즈니스</label>
-                                </div>
-                                <div class="input_check_box">
-                                    <input id="chk11" type="checkbox" class="blind">
-                                    <label for="chk11">의학/과학</label>
-                                </div>
-                                <div class="input_check_box">
-                                    <input id="chk12" type="checkbox" class="blind">
-                                    <label for="chk12">인문/사회</label>
-                                </div>
-                                <div class="input_check_box">
-                                    <input id="chk13" type="checkbox" class="blind">
-                                    <label for="chk13">커리어</label>
-                                </div>
-                                <div class="input_check_box">
-                                    <input id="chk14" type="checkbox" class="blind">
-                                    <label for="chk14">IT/컴퓨터</label>
-                                </div>
-                                <div class="input_check_box">
-                                    <input id="chk14" type="checkbox" class="blind">
-                                    <label for="chk14">컨텐츠</label>
-                                </div>
-                                <div class="input_check_box">
-                                    <input id="chk14" type="checkbox" class="blind">
-                                    <label for="chk14">영역무관</label>
-                                </div>
-                                <!-- //input_check_wrap -->
-
-                            </div>
-                            <!-- //input_check_wrap -->
-
-                        </div>
-                        <!-- //com_box2 -->
-
-                        <div class="com_box2">
-                            <h3>
-                                자기소개
-                            </h3>
-                            <textarea id="introduce">
+                                <textarea id="introduce">
 자기소개
 (경력, 시상내역, 자격증, 저서 해외 경험 등)
                             </textarea>
-                            <!-- //introduce -->
-                            <label for="introduce" class="blind">자기소개</label>
-                        </div>
-                        <!-- //com_box2 -->
-
-                        <div class="com_box2">
-                            <h3>
-                                첨부서류
-                            </h3>
-
-                            <div class="document_wrap">
-                                <div class="document_box">
-                                    <span>
-                                        학력, 전공증빙
-                                        <em class="essential" title="필수입력">*</em>
-                                    </span>
-                                    <input type="file" class="blind" id="file1">
-                                    <label for="file1">파일첨부</label>
-                                </div>
-                                <div class="document_box">
-                                    <span>
-                                        경력 증빙
-                                        <em class="essential" title="필수입력">*</em>
-                                    </span>
-                                    <input type="file" class="blind" id="file1">
-                                    <label for="file1">파일첨부</label>
-                                </div>
-
-                                <div class="document_box">
-                                    <span>
-                                        자격증(보유 시)
-                                    </span>
-                                    <input type="file" class="blind" id="file1">
-                                    <label for="file1">파일첨부</label>
-                                </div>
-
-                                <div class="document_box">
-                                    <span>
-                                        사업자등록증(법인일 경우)
-                                    </span>
-                                    <input type="file" class="blind" id="file1">
-                                    <label for="file1">파일첨부</label>
-                                </div>
-
-                                <div class="document_box">
-                                    <span>
-                                        포트폴리오 증빙
-                                        <em class="essential" title="필수입력">*</em>
-                                    </span>
-                                    <input type="file" class="blind" id="file1">
-                                    <label for="file1">파일첨부</label>
-                                    <a href="#" class="url" target="_blank" title="새 창 열기">url</a>
-                                </div>
+                                <!-- //introduce -->
+                                <label for="introduce" class="blind">자기소개</label>
                             </div>
-                            <!-- //document_wrap -->
+                            <!-- //com_box2 -->
+
+                            <div class="com_box2">
+                                <h3>
+                                    첨부서류
+                                </h3>
+
+                                <div class="document_wrap">
+                                    <div class="document_box">
+                                        <span>
+                                            학력, 전공증빙
+                                            <em class="essential" title="필수입력">*</em>
+                                        </span>
+                                        <input type="file" class="blind" id="file1">
+                                        <label for="file1">파일첨부</label>
+                                    </div>
+                                    <div class="document_box">
+                                        <span>
+                                            경력 증빙
+                                            <em class="essential" title="필수입력">*</em>
+                                        </span>
+                                        <input type="file" class="blind" id="file1">
+                                        <label for="file1">파일첨부</label>
+                                    </div>
+
+                                    <div class="document_box">
+                                        <span>
+                                            자격증(보유 시)
+                                        </span>
+                                        <input type="file" class="blind" id="file1">
+                                        <label for="file1">파일첨부</label>
+                                    </div>
+
+                                    <div class="document_box">
+                                        <span>
+                                            사업자등록증(법인일 경우)
+                                        </span>
+                                        <input type="file" class="blind" id="file1">
+                                        <label for="file1">파일첨부</label>
+                                    </div>
+
+                                    <div class="document_box">
+                                        <span>
+                                            포트폴리오 증빙
+                                            <em class="essential" title="필수입력">*</em>
+                                        </span>
+                                        <input type="file" class="blind" id="file1">
+                                        <label for="file1">파일첨부</label>
+                                        <a href="#" class="url" target="_blank" title="새 창 열기">url</a>
+                                    </div>
+                                </div>
+                                <!-- //document_wrap -->
+
+                            </div>
+                            <!-- //com_box2 -->
+
+                            <div class="application_com_btn">
+                                <a href="#">미리보기</a>
+                                <a href="#">저장하기</a>
+                            </div>
+                            <!-- //application_com_btn-->
 
                         </div>
-                        <!-- //com_box2 -->
-
-                        <div class="application_com_btn">
-                            <a href="#">미리보기</a>
-                            <a href="#">저장하기</a>
-                        </div>
-                        <!-- //application_com_btn-->
+                        <!-- //my_profile -->
 
                     </article>
                     <!-- //article -->
