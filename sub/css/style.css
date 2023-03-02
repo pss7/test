@@ -450,13 +450,138 @@ h4.st::after{content: ''; position: absolute; left: 0; right:0; bottom: 0; heigh
 .my_com_wrap.st {justify-content: space-evenly; gap: 0 7px;}
 .my_com_wrap.st .my_com_box .box{flex-direction: column;}
 .my_com_wrap.st .my_com_box:last-child .box{flex-direction: row;}
-
 .my_com_wrap .my_com_box:nth-child(2) .box,
 .my_com_wrap .my_com_box:nth-child(3) .box{padding-left: 32px;}
 .my_com_wrap .my_com_box:nth-child(2) .box::before,
 .my_com_wrap .my_com_box:nth-child(3) .box::before{top:11px; width: 22px; height: 26px;}
-
-
-
 .my_com_wrap.st .my_com_box:first-child .box{padding: 0;}
 .my_com_wrap.st .my_com_box:first-child .box::before{display: none;}
+
+/* 로그인 */
+#login{padding: 0;}
+.login_wrap{position: relative;}
+.login_box{display: flex; justify-content: center; height: 100vh;}
+.login_wrap .login_left{position: relative; width: 1436px; background-color: #F3F6FD; text-align: center;}
+.login_wrap .login_left p{font-size: 24px; color: #363C4A;}
+.login_wrap .login_left p:first-child{position: absolute; top:163px; left:50%; transform: translateX(-50%);}
+.login_wrap .login_left p:first-child::after{content: ''; padding: 305px 173px 0 0; position: absolute; bottom: -327px; left: 50%; transform: translateX(-50%); background: url(../images/login_img1.png)no-repeat;}
+.login_wrap .login_left p:last-child{position: absolute; top:431px; left:900px;}
+.login_wrap .login_left p span{font-size: 24px; color: #000; font-weight: 700;}
+.login_wrap .login_left p span em{font-size: 40px; color: #000; font-weight: 700;}
+.login_wrap .login_right{flex: 1; padding: 78px; position: relative; }
+.login_wrap .login_right h2{margin-bottom: 44px; font-size: 24px; color: #000;  }
+.login_wrap .login_right .box{margin-bottom: 44px;}
+.login_wrap .login_right .box label{display: block; margin-bottom: 10px; font-size: 14px; color: #5A6470;}
+.login_wrap .login_right .box input{width: 336px; height: 50px; padding-left: 17px; border: 1px solid #DCDDE1; border-radius: 4px;}
+.login_wrap .login_right .box input::placeholder{color: #A0A3A8;}
+.login_wrap .login_right .box input[type="checkbox"]:checked + label::before{background: url(../images/login_checked.png)no-repeat;}
+.login_wrap .login_right .box .auto_login{position: relative; padding-left: 26px; font-size: 13px; color:#818898; cursor: pointer;}
+.login_wrap .login_right .box .auto_login::before{content: ''; position: absolute; top: 50%; left:0; margin-top: -10px; width: 20px; height: 20px; background: url(../images/login_checkbox.png);}
+.login_wrap .login_right .login_box{display: block; margin: 0 auto 32px; width: 336px; height: 66px; line-height: 64px; background-color: #000; border-radius: 8px; text-align: center; color: #fff;}
+.login_wrap .login_right .find{margin-bottom: 57px; display: flex; gap: 0 66px; justify-content: center;}
+.login_wrap .login_right .find li a{display: block; font-size: 13px; color: #7685A4;}
+.login_wrap .login_right .find li a:hover{text-decoration: underline;}
+.com_sns a{position: relative; margin-bottom: 11px; display: block; height: 61px; line-height: 61px; text-align: center; border-radius: 8px;}
+.com_sns a::before{content:''; position: absolute; top: 50%; left:0; transform: translateY(-50%);}
+.com_sns a.naver{background-color: #3EC800; color: #fff;}
+.com_sns a.naver::before{left: 71px; background: url(../images/naver.png)no-repeat; padding: 17px 17px 0 0;}
+.com_sns a.kakao{background-color: #FAE300; color: #000;}
+.com_sns a.kakao::before{left: 74px; background: url(../images/kakao.png)no-repeat; padding: 19px 22px 0 0;}
+.com_sns a.google{border: 1px solid #ddd; color: #000;}
+.login_wrap .login_right .join{padding-right: 9px; position: absolute; top:86px; right:100px; color: #000; font-size: 13px; font-weight: 500;}
+.login_wrap .login_right .join:hover{text-decoration: underline;}
+.login_wrap .login_right .join::after{content: ''; position: absolute; top:50%; right:0; margin-top: -7px;  padding: 14px 8px 0 0; 
+    background: url(../images/join_icon.png)no-repeat; }
+
+/* 이메일 찾기 */
+.login_wrap .find_wrap{margin-top: 46px; padding: 106px 0 118px; min-height: 514px; border: 1px solid #C2C2C2; text-align: center;}
+.login_wrap .find_wrap h3{margin-bottom: 72px; font-size: 34px; font-weight: 500; color: #000; text-align: center;}
+.login_wrap .find_wrap .com_input{margin-bottom: 54px; width: 550px; height: 54px; padding-left: 22px; border: 1px solid #C4C4C4; border-radius: 4px; font-size: 15px;}
+.login_wrap .find_wrap .com_input::placeholder{color: #ABABAB;}
+.com_find_btn{display: block; margin: 0 auto; width: 550px; height: 56px; line-height: 54px; color: #fff; text-align: center; background-color: #6E4AEF; border-radius: 4px;}
+.login_wrap .find_wrap .com_input:read-only{margin-bottom: 20px; border: 0; background-color:#F8F8F8; text-align: center; font-size: 16px; font-weight: 500;}
+.login_wrap .find_wrap .com_input:read-only::placeholder{color: #000000;}
+.login_wrap .find_wrap .info{margin-bottom: 60px; font-size: 15px; color: #000;}
+
+/* 비밀번호 찾기 */
+.login_wrap .find_wrap .link{ margin-top:90px; display: flex; gap: 0 50px; align-items: center; justify-content: center;}
+.login_wrap .find_wrap .link li{position: relative;}
+.login_wrap .find_wrap .link li:last-child::after{display: none;}
+.login_wrap .find_wrap .link li::after{content: ''; position: absolute; right:-22px; top: 50%; margin-top: -7px; width: 1px; height: 15px; background-color:#D9D9D9 ;}
+.login_wrap .find_wrap .link li a{display: block; font-size: 15px; color:#6E4AEF; }
+
+/* 새비밀번호 입력 */
+.new_password_box{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+.new_password_box h3{margin-bottom: 20px!important; padding-bottom: 50px; position: relative; border-bottom: 1px solid #AEAEAE; font-size: 22px!important;}
+.new_password_box input{display: block; width: 100%!important; margin: 0 auto 12px!important;}
+.new_password_box a{width:100%!important;}
+.new_password_box.st h3{border: 0!important;}
+
+/* 휴대폰 변경 */
+.phone_box{}
+.phone_box input{margin-bottom: 20px!important;}
+.phone_box label{display: block; margin-bottom: 10px; text-align: left;}
+
+.login_wd{width: 320px; margin: 0 auto;}
+.wd100{width: 100%!important;}
+
+/* 회원가입 */
+.join_wrap{padding: 79px 0 0;}
+.join_box{display: flex;}
+.join_left{padding-top: 50px; width: 300px; text-align: center;}
+.join_left ul li{margin-bottom: 17px;}
+.join_left ul li a{display: block; font-size: 14px; color: #AFB0B8;}
+.join_left ul li a span{position: relative; padding-left: 30px;}
+.join_left ul li a span::before{content: ''; position: absolute; top: 50%; transform: translateY(-50%); left:0; width: 18px;
+     height: 18px; line-height: 18px; border-radius: 50%; text-align: center; background-color: #E0DDE6; color: #787389; font-size: 14px; font-weight: 700;}
+ .join_left ul li a.active span::before{background-color: #6E4AEF; color: #fff;}
+ .join_left ul li:nth-child(1) a span::before{content: '1';}
+ .join_left ul li:nth-child(2) a span::before{content: '2';}
+ .join_left ul li:nth-child(3) a span::before{content: '3';}
+ .join_right{flex: 1;}
+ .join_right h1{margin-bottom: 27px; font-size: 38px; font-weight: 700;}
+ .join_right .join_text_top{margin-bottom: 54px; font-size: 18px; color: #727A87;}
+ .join_right .join_link{margin-bottom: 16px; display: flex; gap: 0 35px; flex-wrap: wrap;}
+ .join_right .join_link li a{padding: 176px 0 0; position: relative; display: block; width: 224px; height: 290px; text-align: center; border: 1px solid #E9E9E9; border-radius: 4px;}
+ .join_right .join_link li a span{display: block; margin-bottom: 3px; color: #000; font-weight: 500;}
+ .join_right .join_link li a em{font-size: 13px; color: #6C7383;}
+ .join_right .join_link li a::after{content: ''; position: absolute; top:38px; left: 50%; transform: translateX(-50%); width: 141px; height: 112px;}
+ .join_right .join_link li:nth-child(1) a::after{background: url(../images/join1.png)no-repeat; }
+ .join_right .join_link li:nth-child(2) a::after{background: url(../images/join2.png)no-repeat;}
+ .join_right .join_link li:last-child{margin-top: 20px; display: block; width: 100%;}
+ .join_right .join_link li:last-child a{display: flex; flex-direction: column; justify-content: center;  padding: 0; width: 357px; height: 71px;}
+ .join_right .join_link li:last-child a span{font-size: 20px; font-weight: 700;}
+ .join_right .join_login{font-size: 14px; color: #727A87;}
+ .join_right .join_login a{font-size: 14px; font-weight: 700; color: #6E4AEF;}
+
+ /* 개인회원 */
+ .join_right .join_content_box{padding: 102px 0 60px 49px;  border: 1px solid #D9D9D9; border-width: 1px 0 0 1px;}
+ .join_right .join_content_box .com_sns{margin-bottom: 30px;}
+ .join_right .join_content_box .com_sns a{width: 410px;}
+ .join_right .join_content_box .com_find_btn{margin: 30px 0;}
+ .join_right .join_input_box{margin-bottom: 50px; display: flex; flex-direction: column; gap: 10px;}
+ .join_right .join_input_box .box{position: relative; width: 412px;}
+ .join_right .join_input_box .box a{position: absolute; top: 50%; transform: translateY(-50%); right:10px; display: block; border-radius: 2px; width: 111px; height: 31px; line-height: 31px; background-color: #6E4AEF; color: #fff; font-weight: 700; text-align: center;}
+ .join_right .join_input_box label{margin-bottom: 5px; font-size: 15px; font-weight: 500; color: #000;}
+ .join_right .join_input_box label span{font-size: 15px; font-weight: 700; color: #F40E10;} 
+ .join_right .join_input_box input{padding-left: 16px; height: 52px; width: 412px; border: 1px solid #aeaeae; border-radius: 5px;}
+ .join_right .join_input_box input::placeholder{color: #9C9DA9;}
+ .join_right .join_agree_wrap{margin-bottom: 20px;}
+ .join_right .join_agree_wrap .join_agree_box:first-child label{font-size: 18px; font-weight: 500;}
+ .join_right .join_agree_wrap .join_agree_box:first-child{margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px solid #CFCFCF;}
+ .join_right .join_agree_wrap .join_agree_box label{ position: relative; padding-left: 43px; font-size: 15px; color: #000; cursor: pointer;}
+ .join_right .join_agree_wrap .join_agree_box label::before{content: ''; position: absolute; top:-3px; left:0; width: 24px; height: 24px; border-radius: 5px; border: 1px solid #aeaeae;} 
+ .join_right .join_agree_wrap .join_agree_box{margin-bottom: 15px;}
+ .join_right .join_agree_wrap .join_agree_box input[type="checkbox"]:checked + label::before{border: 0; background: url(../images/join_check_on.png)no-repeat;}
+ .join_right .join_agree_wrap .join_agree_box span{color:#6E4AEF; font-weight: 500;}
+
+ /* 회원가입 완료 */
+ .find_wrap.complete h3{position: relative; padding-top: 104px; margin-bottom: 20px;}
+ .find_wrap.complete h3::after{content: ''; position: absolute; left: 51%; transform: translateX(-50%); top:0; padding: 81px 80px 0 0; background: url(../images/complete.png)no-repeat;}
+ .login_wrap.complete .login_left .box{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+ .login_wrap.complete .login_left h3{margin-bottom: 20px; color: #000; font-size: 60px; font-weight: 500; text-align: left;}
+ .login_wrap.complete .login_left p{position: static; color: #000; font-size: 16px; text-align: left;}
+ .login_wrap.complete .login_right .translation_link{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); padding-top: 140px; position: relative;}
+ .login_wrap.complete .login_right .translation_link::after{content: ''; position: absolute; left: 50%; transform: translateX(-50%); top:0; padding: 81px 80px 0 0; background: url(../images/complete.png)no-repeat;}
+ .login_wrap.complete .login_right .translation_link a{margin-bottom: 26px; display: block; width: 328px; height: 74px; line-height: 72px; border-radius: 50px; border: 1px solid #AEAEAE; text-align: center; color: #6E4AEF; transition: all .3s;}
+ .login_wrap.complete .login_right .translation_link a:hover{border: 0; background-color: #6E4AEF; color: #fff;} 
