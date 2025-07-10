@@ -4,7 +4,7 @@
 
 /* 제목 영역 */
 #titleWrap{position: relative; padding-top: 80px; height: 100vh; z-index: 1; overflow: hidden;}
-#titleWrap::after{content: ''; position: absolute; top:0; left:0; right:0; bottom: 0; background: url(../images/main/main_img.jpg)no-repeat center; background-size: cover; z-index: -1; transform: scale(1.5); transition: all 6s;}
+#titleWrap::after{content: ''; position: absolute; top:0; left:0; right:0; bottom: 0; background: url(../images/main/main_img.jpg)no-repeat center; background-size: cover; z-index: -1; transform: scale(1.5); transition: all 4s;}
 #titleWrap.active::after{transform: scale(1);}
 #titleWrap .container{position: relative; height: 100%;}
 #titleWrap .titleBox{height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;}

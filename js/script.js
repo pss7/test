@@ -5,7 +5,7 @@ $(function () {
     $('#headerWrap').addClass('active');
     AOS.init({
       once: false,
-      duration: 2000
+      duration: 1800
     });
   });
 
